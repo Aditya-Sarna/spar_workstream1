@@ -1,0 +1,3640 @@
+{
+  "generated": "2026-09-25T10:19:41.544Z",
+  "track1": {
+    "method": "Every extracted scenario checked for passage integrity against the retrieved text and against the four stated requirements of the scenario definition. Human adjudication of coherence is a separate, open queue.",
+    "summary": {
+      "awaiting-human-review": 41,
+      "failed-definition": 11
+    },
+    "totalScenarios": 52,
+    "passageIntegrityFailures": 0,
+    "definitionFailures": 11,
+    "awaitingHumanReview": 41,
+    "records": [
+      {
+        "scenarioId": "a-blind-spot-in-alignment-c95217--s1",
+        "sourceId": "a-blind-spot-in-alignment-c95217",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Large Language Models (LLMs) are accelerating biological research, yet this same…",
+            "present": true
+          },
+          {
+            "fragment": "As a first step toward mitigation, we provide BioSafe-Guard, a domain-specialize…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events, causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 476 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "artificial-intelligence-and-biosecurity--757d90--s1",
+        "sourceId": "artificial-intelligence-and-biosecurity--757d90",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Artificial intelligence is reshaping biological research across an increasingly …",
+            "present": true
+          },
+          {
+            "fragment": "However, their biosecurity risk depends not only on what the AI can do, but also…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 325 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "can-large-language-models-design-9d0ff4--s1",
+        "sourceId": "can-large-language-models-design-9d0ff4",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Through quantitative risk assessments and scenario analyses, we identify dual-us…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events, causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 186 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "propensitybench-evaluating-latent-safety-f551bf--s1",
+        "sourceId": "propensitybench-evaluating-latent-safety-f551bf",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Recent advances in Large Language Models (LLMs) have sparked concerns over their…",
+            "present": true
+          },
+          {
+            "fragment": "Current safety evaluations primarily test for what a model \\textit{can} do - its…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 358 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biothreat-benchmark-generation-framework-069db3--s1",
+        "sourceId": "biothreat-benchmark-generation-framework-069db3",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The potential for rapidly-evolving frontier artificial intelligence (AI) models,…",
+            "present": true
+          },
+          {
+            "fragment": "The development process involved three complementary approaches: 1) web-based pr…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 547 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biothreat-benchmark-generation-framework-cbcf2b--s1",
+        "sourceId": "biothreat-benchmark-generation-framework-cbcf2b",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Overall, the pilot demonstrated that the B3 dataset offers a viable, nuanced met…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 249 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-biosecurity-blind-spot-systematic-02d4c5--s1",
+        "sourceId": "the-biosecurity-blind-spot-systematic-02d4c5",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "AI is transforming life sciences research at unprecedented speed, accelerating d…",
+            "present": true
+          },
+          {
+            "fragment": "Yet this rapid advancement, coupled with the open science movement, introduces s…",
+            "present": true
+          },
+          {
+            "fragment": "Here we present the first systematic analysis of dual-use research of concern (D…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 496 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biothreat-benchmark-generation-framework-ddac59--s1",
+        "sourceId": "biothreat-benchmark-generation-framework-ddac59",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Both model developers and policymakers seek to quantify and mitigate the risk of…",
+            "present": true
+          },
+          {
+            "fragment": "This paper describes the first component of a novel Biothreat Benchmark Generati…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 348 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "artificial-intelligence-and-biological-m-c3438f--s1",
+        "sourceId": "artificial-intelligence-and-biological-m-c3438f",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "As advancements in artificial intelligence (AI) propel progress in the life scie…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 157 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-wmdp-benchmark-measuring-and-aa2286--s1",
+        "sourceId": "the-wmdp-benchmark-measuring-and-aa2286",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "RMU reduces model performance on WMDP while maintaining general capabilities in …",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 215 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "contemporary-ai-foundation-models-increa-583dd9--s1",
+        "sourceId": "contemporary-ai-foundation-models-increa-583dd9",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The rapid advancement of artificial intelligence has raised concerns about its p…",
+            "present": true
+          },
+          {
+            "fragment": "First, assessments mistakenly assume biological weapons development requires tac…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 311 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "measuring-mid-2025-llm-assistance-308953--s1",
+        "sourceId": "measuring-mid-2025-llm-assistance-308953",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Large language models (LLMs) perform strongly on biological benchmarks, raising …",
+            "present": true
+          },
+          {
+            "fragment": "To address this, we conducted a pre-registered, investigator-blinded, randomized…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 406 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "llm-novice-uplift-on-dual-bed447--s1",
+        "sourceId": "llm-novice-uplift-on-dual-bed447",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Large language models (LLMs) perform increasingly well on biology benchmarks, bu…",
+            "present": true
+          },
+          {
+            "fragment": "This uncertainty is central to understanding both scientific acceleration and du…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 306 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "large-language-model-for-knowledge-67b071--s1",
+        "sourceId": "large-language-model-for-knowledge-67b071",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Large language models (LLMs) are transforming synthetic biology (SynBio) educati…",
+            "present": true
+          },
+          {
+            "fragment": "Finally, we emphasize the need for establishing benchmarks for LLMs, fostering t…",
+            "present": true
+          },
+          {
+            "fragment": "First, we summarize recent developments and compare the capabilities of US and C…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 539 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "responsible-ai-in-biotechnology-balancin-c4730f--s1",
+        "sourceId": "responsible-ai-in-biotechnology-balancin-c4730f",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The integration of artificial intelligence (AI) in protein design presents unpar…",
+            "present": true
+          },
+          {
+            "fragment": "This review examines the changing landscape of bioweapon risks, the dual-use pot…",
+            "present": true
+          },
+          {
+            "fragment": "However, it also raises significant biosecurity concerns.",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 416 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biosecurity-risk-assessment-for-the-9ea27f--s1",
+        "sourceId": "biosecurity-risk-assessment-for-the-9ea27f",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The biosecurity risk assessment tools and methodology presented here are the fir…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 203 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "dual-use-capabilities-of-concern-bd7be8--s1",
+        "sourceId": "dual-use-capabilities-of-concern-bd7be8",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Of these dual-use capabilities, we argue that AI model evaluations should priori…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 383 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "protecting-society-from-ai-misuse-92bd46--s1",
+        "sourceId": "protecting-society-from-ai-misuse-92bd46",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "For example, concerns about AI-enabled bioweapon acquisition have motivated effo…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 121 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "protecting-society-from-ai-misuse-92bd46--s2",
+        "sourceId": "protecting-society-from-ai-misuse-92bd46",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "We provide a taxonomy of interventions that can reduce AI misuse, focusing on th…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship, condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 214 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biosecurity-and-artificial-intelligence--2e87fc--s1",
+        "sourceId": "biosecurity-and-artificial-intelligence--2e87fc",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "For example, the National Academies of Sciences, Engineering, and Medicine (NASE…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 186 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biosecurity-and-artificial-intelligence--2e87fc--s2",
+        "sourceId": "biosecurity-and-artificial-intelligence--2e87fc",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "On the other hand, misuse of AI is secondary to the science and most scientists …",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 138 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "emerging-technologies-transforming-the-f-ad7e02--s1",
+        "sourceId": "emerging-technologies-transforming-the-f-ad7e02",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The convergence of artificial intelligence and synthetic biology offers transfor…",
+            "present": true
+          },
+          {
+            "fragment": "Emerging technologies promise rapid detection, containment, and mitigation of gl…",
+            "present": true
+          },
+          {
+            "fragment": "This research aims to critically examine advances in AI applications for biosecu…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 551 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "genomic-language-models-could-transform-21e1b4--s1",
+        "sourceId": "genomic-language-models-could-transform-21e1b4",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "In February 2025, researchers announced Evo2, a genome language model (gLM) trai…",
+            "present": true
+          },
+          {
+            "fragment": "This article examines gLMs in the context of Evo2, highlighting their potential …",
+            "present": true
+          },
+          {
+            "fragment": "Non-coding DNA contains crucial regulatory elements that coordinate gene express…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events, mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 648 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "artificial-intelligence-and-synthetic-bi-29a4c3--s1",
+        "sourceId": "artificial-intelligence-and-synthetic-bi-29a4c3",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Artificial intelligence (AI) is accelerating discovery timelines in synthetic bi…",
+            "present": true
+          },
+          {
+            "fragment": "At the same time, this acceleration shifts biosecurity risks from physical mater…",
+            "present": true
+          },
+          {
+            "fragment": "Findings indicate that AI systems consistently increase design throughput and lo…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 663 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "managing-misuse-risk-for-dual-87d3d5--s1",
+        "sourceId": "managing-misuse-risk-for-dual-87d3d5",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "This document provides voluntary guidelines for improving the safety, security, …",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 482 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "managing-misuse-risk-for-dual-87d3d5--s2",
+        "sourceId": "managing-misuse-risk-for-dual-87d3d5",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Actors should also collaborate to understand and mitigate misuse risks along the…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 214 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c--s1",
+        "sourceId": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Large language models (LLMs) have a transformative impact on a variety of scient…",
+            "present": true
+          },
+          {
+            "fragment": "We evaluate LLMs in zero-shot, few-shot and chain-of-thought settings, and intro…",
+            "present": true
+          },
+          {
+            "fragment": "Moreover, the safety mechanisms of LLMs in scientific tasks are insufficiently s…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 494 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "model-capability-assessment-and-safeguar-af9441--s1",
+        "sourceId": "model-capability-assessment-and-safeguar-af9441",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "AI leaders and safety reports increasingly warn that advances in model reasoning…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 234 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "agentic-baim-llm-evaluation-able-e3c26c--s1",
+        "sourceId": "agentic-baim-llm-evaluation-able-e3c26c",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biologi…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 176 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "towards-responsible-governance-of-biolog-101ef6--s1",
+        "sourceId": "towards-responsible-governance-of-biolog-101ef6",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Recent advancements in generative machine learning have enabled rapid progress i…",
+            "present": true
+          },
+          {
+            "fragment": "The unprecedented predictive accuracy and novel design capabilities of BDTs pres…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 294 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "know-your-scientist-kyc-as-16b398--s1",
+        "sourceId": "know-your-scientist-kyc-as-16b398",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Biological AI tools for protein design and structure prediction are advancing ra…",
+            "present": true
+          },
+          {
+            "fragment": "Current model-level restrictions, including keyword filtering, output screening,…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 423 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "generative-modeling-in-protein-design-127930--s1",
+        "sourceId": "generative-modeling-in-protein-design-127930",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Generative modeling has become a central paradigm in protein research, extending…",
+            "present": true
+          },
+          {
+            "fragment": "We conclude with critical open challenges: modeling conformational dynamics and …",
+            "present": true
+          },
+          {
+            "fragment": "Beyond cataloging methods, we compare assumptions, conditioning mechanisms, and …",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 716 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "safebench-seq-a-homology-clustered-143d6e--s1",
+        "sourceId": "safebench-seq-a-homology-clustered-143d6e",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Foundation models for protein design raise concrete biosecurity risks, yet the c…",
+            "present": true
+          },
+          {
+            "fragment": "We report discrimination (AUROC/AUPRC) and screening-operating points (TPR@1% FP…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 540 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-convergence-of-ai-and-3b22c2--s1",
+        "sourceId": "the-convergence-of-ai-and-3b22c2",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The convergence of artificial intelligence (AI) and synthetic biology is rapidly…",
+            "present": true
+          },
+          {
+            "fragment": "However, it also poses significant risks around reliability, dual use, and gover…",
+            "present": true
+          },
+          {
+            "fragment": "AI techniques, such as large language models and biological design tools, are en…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism, causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 415 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "from-turing-to-tomorrow-the-a561cd--s1",
+        "sourceId": "from-turing-to-tomorrow-the-a561cd",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The UK has pursued a distinctive path in AI regulation: less cautious than the E…",
+            "present": true
+          },
+          {
+            "fragment": "Impressive developments from companies like London-based DeepMind began to spark…",
+            "present": true
+          },
+          {
+            "fragment": "The UK responded by establishing an AI Safety Institute to monitor risks and hos…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 660 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "protein-design-generative-ai-and-9304e5--s1",
+        "sourceId": "protein-design-generative-ai-and-9304e5",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Artificial intelligence-driven protein design has fundamentally changed what is …",
+            "present": true
+          },
+          {
+            "fragment": "AI-generated proteins may be functionally equivalent to known toxins while shari…",
+            "present": true
+          },
+          {
+            "fragment": "Deep learning models can now generate entirely novel sequences that fold into de…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 481 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "securing-dual-use-pathogen-data-e6434e--s1",
+        "sourceId": "securing-dual-use-pathogen-data-e6434e",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Training data is an essential input into creating competent artificial intellige…",
+            "present": true
+          },
+          {
+            "fragment": "For this reason, an international group of more than 100 researchers at the rece…",
+            "present": true
+          },
+          {
+            "fragment": "Each level contains specific data types, based on their expected ability to cont…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 473 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-whack-a-mole-governance-456302--s1",
+        "sourceId": "the-whack-a-mole-governance-456302",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "AI-enabled synthetic biology has tremendous potential but also significantly inc…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 144 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-whack-a-mole-governance-456302--s2",
+        "sourceId": "the-whack-a-mole-governance-456302",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "How to achieve early warning systems that enable prevention and mitigation of fu…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 254 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "generative-ai-for-biosciences-emerging-4cf348--s1",
+        "sourceId": "generative-ai-for-biosciences-emerging-4cf348",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "In this Perspective, we first outline the current state of GenAI in the bioscien…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 218 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "from-hard-refusals-to-safe-122d64--s1",
+        "sourceId": "from-hard-refusals-to-safe-122d64",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "We incorporated this approach into GPT-5 and find that across both production co…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 300 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "securing-the-language-of-life-cc264a--s1",
+        "sourceId": "securing-the-language-of-life-cc264a",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "DNA language models have revolutionized our ability to understand and design DNA…",
+            "present": true
+          },
+          {
+            "fragment": "However, this capability also poses substantial dual-use risks, including the po…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 392 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "knowledge-graph-analysis-of-legal-42edc3--s1",
+        "sourceId": "knowledge-graph-analysis-of-legal-42edc3",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "The rise of Large Language Models (LLMs) offers transformative potential for int…",
+            "present": true
+          },
+          {
+            "fragment": "Our findings reveal significant limitations in LLMs' reasoning and safety mechan…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries mechanism."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 321 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "divide-consult-conquer-capability-launde-b6b16e--s1",
+        "sourceId": "divide-consult-conquer-capability-launde-b6b16e",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Language model safety is typically evaluated one interaction at a time.",
+            "present": true
+          },
+          {
+            "fragment": "For CBRN, we measure uplift across eight steps of a hypothetical bioweapon attac…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 276 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "preventing-jailbreak-prompts-as-maliciou-d3a94c--s1",
+        "sourceId": "preventing-jailbreak-prompts-as-maliciou-d3a94c",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Jailbreak prompts pose a significant threat in AI and cybersecurity, as they are…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": false,
+            "detail": "No biological anchor in the passage. The source may be about AI risk in general, so this account does not meet the definition without one."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 190 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": false,
+        "duplicateOf": null,
+        "autoStatus": "failed-definition",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "improving-governance-in-the-age-3f3793--s1",
+        "sourceId": "improving-governance-in-the-age-3f3793",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Introduction: Advancements in synthetic biology (SynBio) and other emerging and …",
+            "present": true
+          },
+          {
+            "fragment": "However, these promising and groundbreaking advances could also lead to novel bi…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 416 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "bioterrorism-and-global-politics-strengt-13f07a--s1",
+        "sourceId": "bioterrorism-and-global-politics-strengt-13f07a",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "It further analyzes how contemporary dual-use technologies, particularly CRISPR-…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 193 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "biotier-a-refusal-benchmark-for-942c43--s1",
+        "sourceId": "biotier-a-refusal-benchmark-for-942c43",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "As large language models become increasingly capable, concerns about their poten…",
+            "present": true
+          },
+          {
+            "fragment": "To address this, we introduce BioTIER (Biological Targeted Information for Exclu…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 311 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "quantifying-cbrn-risk-in-frontier-aad61d--s1",
+        "sourceId": "quantifying-cbrn-risk-in-frontier-aad61d",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Frontier Large Language Models (LLMs) pose unprecedented dual-use risks through …",
+            "present": true
+          },
+          {
+            "fragment": "We present the first comprehensive evaluation of 10 leading commercial LLMs agai…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 408 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "grand-challenge-in-biosafety-and-967f52--s1",
+        "sourceId": "grand-challenge-in-biosafety-and-967f52",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "More recently, the integration of AI with engineering biology has introduced bio…",
+            "present": true
+          },
+          {
+            "fragment": "To further address these concerns, the World Health Organization (WHO) developed…",
+            "present": true
+          },
+          {
+            "fragment": "Many of the high containment labs are in or planned for urban centers where an a…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries condition leading to outcome."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 520 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as complete."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "safeguarding-mail-order-dna-synthesis-f67de8--s1",
+        "sourceId": "safeguarding-mail-order-dna-synthesis-f67de8",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "Introduction: Artificial intelligence (AI) tools continue to be developed and us…",
+            "present": true
+          },
+          {
+            "fragment": "Results: Generally, chatbots lower barriers to access of information that could …",
+            "present": true
+          },
+          {
+            "fragment": "Conclusion: Mandating mail-order DNA synthesis providers to screen DNA synthesis…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries sequence of events."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 461 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      },
+      {
+        "scenarioId": "the-evolving-role-of-artificial-bc8cd8--s1",
+        "sourceId": "the-evolving-role-of-artificial-bc8cd8",
+        "passageIntegrity": true,
+        "passageFragments": [
+          {
+            "fragment": "However, this powerful synergy introduces significant ethical, regulatory, and b…",
+            "present": true
+          }
+        ],
+        "definitionChecks": [
+          {
+            "id": "D1",
+            "requirement": "At least one causal element is present",
+            "pass": true,
+            "detail": "Carries causal relationship."
+          },
+          {
+            "id": "D2",
+            "requirement": "The account concerns AI-enabled biological misuse",
+            "pass": true,
+            "detail": "A biological anchor is present in the passage itself, not only elsewhere in the source."
+          },
+          {
+            "id": "D3",
+            "requirement": "The passage is the right size to be a coherent account",
+            "pass": true,
+            "detail": "Passage is 202 characters."
+          },
+          {
+            "id": "D4",
+            "requirement": "Partial or complete status is recorded",
+            "pass": true,
+            "detail": "Recorded as partial."
+          }
+        ],
+        "definitionPass": true,
+        "duplicateOf": null,
+        "autoStatus": "awaiting-human-review",
+        "humanReview": {
+          "status": null,
+          "reviewer": null,
+          "note": null,
+          "decidedAt": null
+        }
+      }
+    ]
+  },
+  "track2": {
+    "method": "Every eligible source coded from scratch by an independent coder blind to pass 1, using a different unit of analysis and a different causal vocabulary, then compared on passage overlap to characterise coverage. The seeded subsample the human track would draw is reported alongside, so the cost of the sampling rate is visible.",
+    "coder2RulesetHash": "a53d57514efa0511",
+    "coder2Kind": "rule-based stand-in for the blind human coder",
+    "coverage": {
+      "sources": 55,
+      "coder2Scenarios": 32,
+      "pass1Scenarios": 52,
+      "matched": 10,
+      "missedByPass1": 22,
+      "uniqueToPass1": 42,
+      "recall": 0.3125,
+      "seed": 20260925,
+      "sourcesEligible": 55,
+      "humanSampleRate": 0.2,
+      "subsample": {
+        "sources": 11,
+        "coder2Scenarios": 1,
+        "pass1Scenarios": 10,
+        "matched": 0,
+        "missedByPass1": 1,
+        "uniqueToPass1": 10,
+        "recall": 0
+      },
+      "samplingNote": "Coding every eligible source gives recall 31.3% over 32 independently identified accounts. The 20% subsample gives 0.0% over 1. The gap between them is the cost of the sampling rate, and it is the argument for choosing the rate from this number rather than by convention.",
+      "interpretation": "Of 32 accounts the independent coder identified across all eligible sources, pass 1 also found 10. The 22 it missed are the coverage gap, and each is listed so it can be inspected rather than summarised away."
+    },
+    "comparisons": [
+      {
+        "sourceId": "a-blind-spot-in-alignment-c95217",
+        "sourceTitle": "A Blind Spot in Alignment: Quantifying Biosecurity Risks in Large Language Models",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 1,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "Large Language Models (LLMs) are accelerating biological research, yet this same capability poses a critical biosecurity",
+            "pass1ScenarioId": "a-blind-spot-in-alignment-c95217--s1",
+            "overlap": 0.45
+          }
+        ]
+      },
+      {
+        "sourceId": "artificial-intelligence-and-biosecurity--757d90",
+        "sourceTitle": "Artificial intelligence and biosecurity: capabilities, threat pathways, and defense-in-depth governance",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "artificial-intelligence-and-biosecurity--757d90--s1",
+            "passage": "Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. […] However, their biosecurity risk depends not only on what the AI can do, but "
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "can-large-language-models-design-9d0ff4",
+        "sourceTitle": "Can Large Language Models Design Biological Weapons? Evaluating Moremi Bio",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "can-large-language-models-design-9d0ff4--s1",
+            "passage": "Through quantitative risk assessments and scenario analyses, we identify dual-use capabilities in current LLM-enabled biodesign pipelines and propose multi-layered mitigation strategies."
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "propensitybench-evaluating-latent-safety-f551bf",
+        "sourceTitle": "PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "propensitybench-evaluating-latent-safety-f551bf--s1",
+            "passage": "Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous or high-risk capabilities, posing frontier risks. […] Current safety evaluati"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "biothreat-benchmark-generation-framework-069db3",
+        "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models II: Benchmark Generation Process",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 1,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "The potential for rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs)",
+            "pass1ScenarioId": "biothreat-benchmark-generation-framework-069db3--s1",
+            "overlap": 0.38
+          }
+        ]
+      },
+      {
+        "sourceId": "biothreat-benchmark-generation-framework-cbcf2b",
+        "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models III: Implementing the Bacterial Biothreat Benchmark (B3) Dataset",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "The potential for rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons has generated signi",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "biothreat-benchmark-generation-framework-cbcf2b--s1",
+            "passage": "Overall, the pilot demonstrated that the B3 dataset offers a viable, nuanced method for rapidly assessing the biosecurity risk posed by a LLM, identifying the key sources of that risk and providing gu"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "the-biosecurity-blind-spot-systematic-02d4c5",
+        "sourceTitle": "The Biosecurity Blind Spot: Systematic Dual-use Detection in Open Science Infrastructure",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "the-biosecurity-blind-spot-systematic-02d4c5--s1",
+            "passage": "AI is transforming life sciences research at unprecedented speed, accelerating discovery across protein structure prediction, genome modeling, and drug development (Jumper et al., 2021; Mak et al., 20"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "an-early-warning-of-emerging-bf22bd",
+        "sourceTitle": "An Early Warning of Emerging Biosecurity Risks in Frontier LLMs",
+        "inHumanSample": true,
+        "pass1Count": 0,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "biothreat-benchmark-generation-framework-ddac59",
+        "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models I: The Task-Query Architecture",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 1,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "Both model developers and policymakers seek to quantify and mitigate the risk of rapidly-evolving frontier artificial in",
+            "pass1ScenarioId": "biothreat-benchmark-generation-framework-ddac59--s1",
+            "overlap": 0.56
+          }
+        ]
+      },
+      {
+        "sourceId": "artificial-intelligence-and-biological-m-c3438f",
+        "sourceTitle": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "artificial-intelligence-and-biological-m-c3438f--s1",
+            "passage": "As advancements in artificial intelligence (AI) propel progress in the life sciences, they may also enable the weaponisation and misuse of biological agents."
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "the-wmdp-benchmark-measuring-and-aa2286",
+        "sourceTitle": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "the-wmdp-benchmark-measuring-and-aa2286--s1",
+            "passage": "RMU reduces model performance on WMDP while maintaining general capabilities in areas such as biology and computer science, suggesting that unlearning may be a concrete path towards reducing malicious"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "contemporary-ai-foundation-models-increa-583dd9",
+        "sourceTitle": "Contemporary AI foundation models increase biological weapons risk",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "contemporary-ai-foundation-models-increa-583dd9--s1",
+            "passage": "The rapid advancement of artificial intelligence has raised concerns about its potential to facilitate biological weapons development. […] First, assessments mistakenly assume biological weapons devel"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "measuring-mid-2025-llm-assistance-308953",
+        "sourceTitle": "Measuring Mid-2025 LLM-Assistance on Novice Performance in Biology",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "measuring-mid-2025-llm-assistance-308953--s1",
+            "passage": "Large language models (LLMs) perform strongly on biological benchmarks, raising concerns that they may help novice actors acquire dual-use laboratory skills. […] To address this, we conducted a pre-re"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "llm-novice-uplift-on-dual-bed447",
+        "sourceTitle": "LLM Novice Uplift on Dual-Use, In Silico Biology Tasks",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "llm-novice-uplift-on-dual-bed447--s1",
+            "passage": "Large language models (LLMs) perform increasingly well on biology benchmarks, but it remains unclear whether they uplift novice users -- i.e., enable humans to perform better than with internet-only r"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "large-language-model-for-knowledge-67b071",
+        "sourceTitle": "Large language model for knowledge synthesis and AI-enhanced biomanufacturing",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "large-language-model-for-knowledge-67b071--s1",
+            "passage": "Large language models (LLMs) are transforming synthetic biology (SynBio) education and research. […] Finally, we emphasize the need for establishing benchmarks for LLMs, fostering trustworthy knowledg"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "responsible-ai-in-biotechnology-balancin-c4730f",
+        "sourceTitle": "Responsible AI in biotechnology: balancing discovery, innovation and biosecurity risks",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "responsible-ai-in-biotechnology-balancin-c4730f--s1",
+            "passage": "The integration of artificial intelligence (AI) in protein design presents unparalleled opportunities for innovation in bioengineering and biotechnology. […] This review examines the changing landscap"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "biosecurity-risk-assessment-for-the-9ea27f",
+        "sourceTitle": "Biosecurity Risk Assessment for the Use of Artificial Intelligence in Synthetic Biology",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "biosecurity-risk-assessment-for-the-9ea27f--s1",
+            "passage": "The biosecurity risk assessment tools and methodology presented here are the first provided in the literature and will be instrumental steps toward the responsible integration of AI in synthetic biolo"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "dual-use-capabilities-of-concern-bd7be8",
+        "sourceTitle": "Dual-use capabilities of concern of biological AI models",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 3,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "As a result of rapidly accelerating artificial intelligence (AI) capabilities, multiple national governments and multinational bodies have launched efforts to address safety, security and ethics issue",
+            "causalMarkers": [
+              "as a result"
+            ]
+          },
+          {
+            "passage": "Many biologists have for decades sought to reduce the risks of scientific research that could lead, through accident or misuse, to high-consequence disease outbreaks. Scientists have carefully conside",
+            "causalMarkers": [
+              "potential for"
+            ]
+          },
+          {
+            "passage": "Scientists have carefully considered what types of life sciences research have the potential for both benefit and risk (dual use), especially as scientific advances have accelerated our ability to eng",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "dual-use-capabilities-of-concern-bd7be8--s1",
+            "passage": "Of these dual-use capabilities, we argue that AI model evaluations should prioritize addressing those which enable high-consequence risks (i.e., large-scale harm to the public, such as transmissible d"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "protecting-society-from-ai-misuse-92bd46",
+        "sourceTitle": "Protecting society from AI misuse: when are restrictions on capabilities warranted?",
+        "inHumanSample": true,
+        "pass1Count": 2,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "protecting-society-from-ai-misuse-92bd46--s1",
+            "passage": "For example, concerns about AI-enabled bioweapon acquisition have motivated efforts to introduce DNA synthesis screening."
+          },
+          {
+            "scenarioId": "protecting-society-from-ai-misuse-92bd46--s2",
+            "passage": "We provide a taxonomy of interventions that can reduce AI misuse, focusing on the specific steps required for a misuse to cause harm (the Misuse Chain), and a framework to determine if an intervention"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "biosecurity-and-artificial-intelligence--2e87fc",
+        "sourceTitle": "Biosecurity and Artificial Intelligence in the Life Sciences",
+        "inHumanSample": false,
+        "pass1Count": 2,
+        "coder2Count": 3,
+        "matched": 2,
+        "missedByPass1": [
+          {
+            "passage": "The convergence of artificial intelligence (AI) and biology has given rise to increasing concerns regarding generative AI, such as large language models (LLMs), and their potential for harm and misuse",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "For example, the National Academies of Sciences, Engineering, and Medicine (NASEM) is assessing the ways in which AI can",
+            "pass1ScenarioId": "biosecurity-and-artificial-intelligence--2e87fc--s1",
+            "overlap": 0.45
+          },
+          {
+            "coder2Passage": "Bringing together scientists from industry and academia, a recent meeting illustrated how generative AI has been used to",
+            "pass1ScenarioId": "biosecurity-and-artificial-intelligence--2e87fc--s2",
+            "overlap": 0.41
+          }
+        ]
+      },
+      {
+        "sourceId": "emerging-technologies-transforming-the-f-ad7e02",
+        "sourceTitle": "Emerging technologies transforming the future of global biosecurity",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "emerging-technologies-transforming-the-f-ad7e02--s1",
+            "passage": "The convergence of artificial intelligence and synthetic biology offers transformative opportunities to enhance global biosecurity. […] Emerging technologies promise rapid detection, containment, and "
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "genomic-language-models-could-transform-21e1b4",
+        "sourceTitle": "Genomic language models could transform medicine but not yet",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 2,
+        "matched": 1,
+        "missedByPass1": [
+          {
+            "passage": "This article examines gLMs in the context of Evo2, highlighting their potential for biological research and medicine while exploring the technical barriers and ethical challenges—from data privacy to ",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "The introduction of Evo2 represents both important progress for the field and highlights critical questions about what t",
+            "pass1ScenarioId": "genomic-language-models-could-transform-21e1b4--s1",
+            "overlap": 0.32
+          }
+        ]
+      },
+      {
+        "sourceId": "artificial-intelligence-and-synthetic-bi-29a4c3",
+        "sourceTitle": "Artificial intelligence and synthetic biology: biosecurity risks, dual-use concerns, and governance pathways",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "Evaluation gaps persist, and harmonized metrics—such as synthesis-screening coverage, red-team testing frequency, accredited biofoundries, and early-warning lead times—are recommended for systematic m",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "artificial-intelligence-and-synthetic-bi-29a4c3--s1",
+            "passage": "Artificial intelligence (AI) is accelerating discovery timelines in synthetic biology, expanding opportunities for therapeutic breakthroughs, sustainable bio-manufacturing, and rapid response to healt"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "managing-misuse-risk-for-dual-87d3d5",
+        "sourceTitle": "Managing Misuse Risk for Dual-Use Foundation Models",
+        "inHumanSample": false,
+        "pass1Count": 2,
+        "coder2Count": 3,
+        "matched": 1,
+        "missedByPass1": [
+          {
+            "passage": "The ways that foundation models can be misused continue to evolve, but scenarios include using a model to facilitate the development of chemical, biological, radiological, or nuclear weapons; enable o",
+            "causalMarkers": [
+              "as a result",
+              "poses"
+            ]
+          },
+          {
+            "passage": "Misuse risks are not a function of the model alone-they result in part from malicious actors' motivations, resources, and constraints, as well as the ways that models are integrated into applications ",
+            "causalMarkers": [
+              "as a result"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "managing-misuse-risk-for-dual-87d3d5--s2",
+            "passage": "Actors should also collaborate to understand and mitigate misuse risks along the AI supply chain and throughout the AI lifecycle, such as the information sharing recommendations outlined in Objective "
+          }
+        ],
+        "matches": [
+          {
+            "coder2Passage": "This document provides voluntary guidelines for improving the safety, security, and trustworthiness of dual-use foundati",
+            "pass1ScenarioId": "managing-misuse-risk-for-dual-87d3d5--s1",
+            "overlap": 0.41
+          }
+        ]
+      },
+      {
+        "sourceId": "large-language-model-agents-for-895098",
+        "sourceTitle": "Large language model agents for biological intelligence across genomics, proteomics, spatial biology, and biomedicine",
+        "inHumanSample": true,
+        "pass1Count": 0,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c",
+        "sourceTitle": "SciSafeEval: A Comprehensive Benchmark for Safety Alignment of Large Language Models in Scientific Tasks",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c--s1",
+            "passage": "Large language models (LLMs) have a transformative impact on a variety of scientific tasks across disciplines including biology, chemistry, medicine, and physics. […] We evaluate LLMs in zero-shot, fe"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "model-capability-assessment-and-safeguar-af9441",
+        "sourceTitle": "Model Capability Assessment and Safeguards for Biological Weaponization",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "model-capability-assessment-and-safeguar-af9441--s1",
+            "passage": "AI leaders and safety reports increasingly warn that advances in model reasoning may enable biological misuse, including by low-expertise users, while major labs describe safeguards as expanding but s"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "mitigating-risks-at-the-intersection-e537fa",
+        "sourceTitle": "Mitigating Risks at the Intersection of Artificial Intelligence and Chemical and Biological Weapons",
+        "inHumanSample": false,
+        "pass1Count": 0,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "agentic-baim-llm-evaluation-able-e3c26c",
+        "sourceTitle": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "agentic-baim-llm-evaluation-able-e3c26c--s1",
+            "passage": "We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows."
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "towards-responsible-governance-of-biolog-101ef6",
+        "sourceTitle": "Towards Responsible Governance of Biological Design Tools",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 2,
+        "matched": 1,
+        "missedByPass1": [
+          {
+            "passage": "For example, their predictive accuracy allows biological agents, whether vaccines or pathogens, to be developed more quickly, while the design capabilities could be used to discover drugs or evade DNA",
+            "causalMarkers": [
+              "allows",
+              "could be used"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "The unprecedented predictive accuracy and novel design capabilities of BDTs present new and significant dual-use risks. ",
+            "pass1ScenarioId": "towards-responsible-governance-of-biolog-101ef6--s1",
+            "overlap": 0.3
+          }
+        ]
+      },
+      {
+        "sourceId": "know-your-scientist-kyc-as-16b398",
+        "sourceTitle": "Know Your Scientist: KYC as Biosecurity Infrastructure",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 1,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "Tier III monitors behavioral patterns to detect anomalies inconsistent with declared research purposes. This layered approach preserves access for legitimate researchers while raising the cost of misu",
+            "causalMarkers": [
+              "poses"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "know-your-scientist-kyc-as-16b398--s1",
+            "passage": "Biological AI tools for protein design and structure prediction are advancing rapidly, creating dual-use risks that existing safeguards cannot adequately address. […] Current model-level restrictions,"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "generative-modeling-in-protein-design-127930",
+        "sourceTitle": "Generative Modeling in Protein Design: Neural Representations, Conditional Generation, and Evaluation Standards",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "generative-modeling-in-protein-design-127930--s1",
+            "passage": "Generative modeling has become a central paradigm in protein research, extending machine learning beyond structure prediction toward sequence design, backbone generation, inverse folding, and biomolec"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "safebench-seq-a-homology-clustered-143d6e",
+        "sourceTitle": "SafeBench-Seq: A Homology-Clustered, CPU-Only Baseline for Protein Hazard Screening with Physicochemical/Composition Features and Cluster-Aware Confidence Intervals",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "safebench-seq-a-homology-clustered-143d6e--s1",
+            "passage": "Foundation models for protein design raise concrete biosecurity risks, yet the community lacks a simple, reproducible baseline for sequence-level hazard screening that is explicitly evaluated under ho"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "the-convergence-of-ai-and-3b22c2",
+        "sourceTitle": "The Convergence of AI and Synthetic Biology: The Looming Deluge",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 2,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "This convergence promises to democratize synthetic biology and unlock novel applications across domains from medicine to environmental sustainability. However, it also poses significant risks around r",
+            "causalMarkers": [
+              "poses"
+            ]
+          },
+          {
+            "passage": "However, it also poses significant risks around reliability, dual use, and governance. The opacity of AI models, the deskilling of workforces, and the outdated nature of current regulatory frameworks ",
+            "causalMarkers": [
+              "poses"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "the-convergence-of-ai-and-3b22c2--s1",
+            "passage": "The convergence of artificial intelligence (AI) and synthetic biology is rapidly accelerating the pace of biological discovery and engineering. […] However, it also poses significant risks around reli"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "from-turing-to-tomorrow-the-a561cd",
+        "sourceTitle": "From Turing to Tomorrow: The UK's Approach to AI Regulation",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "from-turing-to-tomorrow-the-a561cd--s1",
+            "passage": "The UK has pursued a distinctive path in AI regulation: less cautious than the EU but more willing to address risks than the US, and has emerged as a global leader in coordinating AI safety efforts. ["
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "a-machine-learning-toolkit-for-96a45d",
+        "sourceTitle": "A machine learning toolkit for genetic engineering attribution to facilitate biosecurity",
+        "inHumanSample": false,
+        "pass1Count": 0,
+        "coder2Count": 1,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "The promise of biotechnology is tempered by its potential for accidental or deliberate misuse. Reliably identifying telltale signatures characteristic to different genetic designers, termed 'genetic e",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "protein-design-generative-ai-and-9304e5",
+        "sourceTitle": "Protein design, generative AI and biological security",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "protein-design-generative-ai-and-9304e5--s1",
+            "passage": "Artificial intelligence-driven protein design has fundamentally changed what is possible in protein engineering. […] AI-generated proteins may be functionally equivalent to known toxins while sharing "
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "securing-dual-use-pathogen-data-e6434e",
+        "sourceTitle": "Securing Dual-Use Pathogen Data of Concern",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "securing-dual-use-pathogen-data-e6434e--s1",
+            "passage": "Training data is an essential input into creating competent artificial intelligence (AI) models. […] For this reason, an international group of more than 100 researchers at the recent 50th anniversary"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "the-whack-a-mole-governance-456302",
+        "sourceTitle": "The whack-a-mole governance challenge for AI-enabled synthetic biology: literature review and emerging frameworks",
+        "inHumanSample": false,
+        "pass1Count": 2,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "the-whack-a-mole-governance-456302--s1",
+            "passage": "AI-enabled synthetic biology has tremendous potential but also significantly increases biorisks and brings about a new set of dual use concerns."
+          },
+          {
+            "scenarioId": "the-whack-a-mole-governance-456302--s2",
+            "passage": "How to achieve early warning systems that enable prevention and mitigation of future AI-enabled biohazards from the lab, from deliberate misuse, or from the public realm, will constantly need to evolv"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "generative-ai-for-biosciences-emerging-4cf348",
+        "sourceTitle": "Generative AI for Biosciences: Emerging Threats and Roadmap to Biosecurity",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "generative-ai-for-biosciences-emerging-4cf348--s1",
+            "passage": "In this Perspective, we first outline the current state of GenAI in the biosciences and emerging threat vectors ranging from jailbreak attacks and privacy risks to the dual-use challenges posed by aut"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "from-hard-refusals-to-safe-122d64",
+        "sourceTitle": "From Hard Refusals to Safe-Completions: Toward Output-Centric Safety Training",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "from-hard-refusals-to-safe-122d64--s1",
+            "passage": "We incorporated this approach into GPT-5 and find that across both production comparisons and internally controlled experiments, safe-completion training improves safety (especially on dual-use prompt"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "securing-the-language-of-life-cc264a",
+        "sourceTitle": "Securing the Language of Life: Inheritable Watermarks from DNA Language Models to Proteins",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 2,
+        "matched": 1,
+        "missedByPass1": [
+          {
+            "passage": "However, this capability also poses substantial dual-use risks, including the potential for creating pathogens, viruses, and even bioweapons. To address these biosecurity challenges, we introduce two ",
+            "causalMarkers": [
+              "poses",
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "DNA language models have revolutionized our ability to understand and design DNA sequences--the fundamental language of ",
+            "pass1ScenarioId": "securing-the-language-of-life-cc264a--s1",
+            "overlap": 1
+          }
+        ]
+      },
+      {
+        "sourceId": "knowledge-graph-analysis-of-legal-42edc3",
+        "sourceTitle": "Knowledge Graph Analysis of Legal Understanding and Violations in LLMs",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 3,
+        "matched": 1,
+        "missedByPass1": [
+          {
+            "passage": "However, this capability comes with a troubling contradiction: while LLMs can analyze and interpret laws, they also demonstrate alarming vulnerabilities in generating unsafe outputs, such as actionabl",
+            "causalMarkers": [
+              "potential for"
+            ]
+          },
+          {
+            "passage": "To address this challenge, we propose a methodology that integrates knowledge graph construction with Retrieval-Augmented Generation (RAG) to systematically evaluate LLMs' understanding of this law, t",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": [
+          {
+            "coder2Passage": "The rise of Large Language Models (LLMs) offers transformative potential for interpreting complex legal frameworks, such",
+            "pass1ScenarioId": "knowledge-graph-analysis-of-legal-42edc3--s1",
+            "overlap": 0.49
+          }
+        ]
+      },
+      {
+        "sourceId": "divide-consult-conquer-capability-launde-b6b16e",
+        "sourceTitle": "Divide, Consult, Conquer: Capability Laundering Through Aligned LLMs",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "divide-consult-conquer-capability-launde-b6b16e--s1",
+            "passage": "Language model safety is typically evaluated one interaction at a time. […] For CBRN, we measure uplift across eight steps of a hypothetical bioweapon attack chain and find that consultation raises Ge"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "preventing-jailbreak-prompts-as-maliciou-d3a94c",
+        "sourceTitle": "Preventing Jailbreak Prompts as Malicious Tools for Cybercriminals: A Cyber Defense Perspective",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "preventing-jailbreak-prompts-as-maliciou-d3a94c--s1",
+            "passage": "Jailbreak prompts pose a significant threat in AI and cybersecurity, as they are crafted to bypass ethical safeguards in large language models, potentially enabling misuse by cybercriminals."
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "improving-governance-in-the-age-3f3793",
+        "sourceTitle": "Improving governance in the age of synthetic biology, artificial intelligence, and diverging threats",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "improving-governance-in-the-age-3f3793--s1",
+            "passage": "Introduction: Advancements in synthetic biology (SynBio) and other emerging and converging technologies, such as artificial intelligence (AI) additive manufacturing (3D printing), and nanotechnology a"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "bioterrorism-and-global-politics-strengt-13f07a",
+        "sourceTitle": "Bioterrorism and Global Politics: Strengthening International Law for Emerging Biological Threats",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "bioterrorism-and-global-politics-strengt-13f07a--s1",
+            "passage": "It further analyzes how contemporary dual-use technologies, particularly CRISPR-Cas systems and AI-enabled biological design, have lowered barriers to misuse by both state and non-state actors."
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "biotier-a-refusal-benchmark-for-942c43",
+        "sourceTitle": "BioTIER: A Refusal Benchmark for Targeted Biological Risk Mitigation",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "biotier-a-refusal-benchmark-for-942c43--s1",
+            "passage": "As large language models become increasingly capable, concerns about their potential to assist with biological misuse continue to grow. […] To address this, we introduce BioTIER (Biological Targeted I"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "can-large-language-models-democratize-13619b",
+        "sourceTitle": "Can large language models democratize access to dual-use biotechnology?",
+        "inHumanSample": false,
+        "pass1Count": 0,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "quantifying-cbrn-risk-in-frontier-aad61d",
+        "sourceTitle": "Quantifying CBRN Risk in Frontier Models",
+        "inHumanSample": true,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "quantifying-cbrn-risk-in-frontier-aad61d--s1",
+            "passage": "Frontier Large Language Models (LLMs) pose unprecedented dual-use risks through the potential proliferation of chemical, biological, radiological, and nuclear (CBRN) weapons knowledge. […] We present "
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "practical-questions-for-securing-nucleic-26223b",
+        "sourceTitle": "Practical Questions for Securing Nucleic Acid Synthesis",
+        "inHumanSample": false,
+        "pass1Count": 0,
+        "coder2Count": 2,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "Introduction: Affordable and accurate nucleic acid synthesis is foundational to modern biotechnology, but raises security concerns because it facilitates the construction of pathogens and other potent",
+            "causalMarkers": [
+              "because",
+              "risk of"
+            ]
+          },
+          {
+            "passage": "Nucleic acid synthesis screening can reduce the risk of providing potentially harmful nucleic acids to those without a legitimate use for them. Governments, industry associations, and biosecurity orga",
+            "causalMarkers": [
+              "risk of"
+            ]
+          }
+        ],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "grand-challenge-in-biosafety-and-967f52",
+        "sourceTitle": "Grand challenge in biosafety and biosecurity",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 3,
+        "matched": 0,
+        "missedByPass1": [
+          {
+            "passage": "Because biorisk management is oriented around performance, a laboratory in a low-resource country can implement it as effectively as one in a developed country. To help inexperienced laboratories as w",
+            "causalMarkers": [
+              "because"
+            ]
+          },
+          {
+            "passage": "These categories of experiments could help scientists, editors, and reviewers in deciding whether their proposed, ongoing work, or submitted manuscript is DURC.In 2012, research groups in the Netherla",
+            "causalMarkers": [
+              "in order to"
+            ]
+          },
+          {
+            "passage": "DNA synthesis technologies are catalyzing rapid advances in engineering biology. While the promise of this technology is immense, so is its potential for intentional or accidental misuse.",
+            "causalMarkers": [
+              "potential for"
+            ]
+          }
+        ],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "grand-challenge-in-biosafety-and-967f52--s1",
+            "passage": "More recently, the integration of AI with engineering biology has introduced biosecurity challenges that will need to be addressed (De Haro, L. […] To further address these concerns, the World Health "
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "safeguarding-mail-order-dna-synthesis-f67de8",
+        "sourceTitle": "Safeguarding Mail-Order DNA Synthesis in the Age of Artificial Intelligence",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "safeguarding-mail-order-dna-synthesis-f67de8--s1",
+            "passage": "Introduction: Artificial intelligence (AI) tools continue to be developed and used within the life sciences. […] Results: Generally, chatbots lower barriers to access of information that could be misu"
+          }
+        ],
+        "matches": []
+      },
+      {
+        "sourceId": "peptide-toxins-as-biothreats-and-68157b",
+        "sourceTitle": "Peptide Toxins as Biothreats and the Potential for AI Systems to Enhance Biosecurity",
+        "inHumanSample": false,
+        "pass1Count": 0,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [],
+        "matches": []
+      },
+      {
+        "sourceId": "the-evolving-role-of-artificial-bc8cd8",
+        "sourceTitle": "The Evolving Role of Artificial Intelligence in Medical Genetics: Advancing Healthcare, Research, and Biosafety Management",
+        "inHumanSample": false,
+        "pass1Count": 1,
+        "coder2Count": 0,
+        "matched": 0,
+        "missedByPass1": [],
+        "uniqueToPass1": [
+          {
+            "scenarioId": "the-evolving-role-of-artificial-bc8cd8--s1",
+            "passage": "However, this powerful synergy introduces significant ethical, regulatory, and biosecurity challenges, including data privacy, algorithmic bias, and the dual-use risks of AI-enabled genetic engineerin"
+          }
+        ],
+        "matches": []
+      }
+    ]
+  }
+}

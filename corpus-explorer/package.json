@@ -1,0 +1,30 @@
+{
+  "name": "aixbio-corpus-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "harvest": "node scripts/harvest.mjs",
+    "screen": "node scripts/screen.mjs",
+    "extract": "node scripts/extract.mjs",
+    "verify": "node scripts/verify.mjs",
+    "pipeline": "node scripts/harvest.mjs && node scripts/screen.mjs && node scripts/extract.mjs && node scripts/verify.mjs",
+    "reset-db": "rm -f data/review.db data/review.db-wal data/review.db-shm \"${TMPDIR:-/tmp}/aixbio-review.db\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "next": "15.1.11",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "22.10.7",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "typescript": "5.7.3"
+  }
+}

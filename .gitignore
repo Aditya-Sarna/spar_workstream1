@@ -1,0 +1,11 @@
+.DS_Store
+**/node_modules/
+**/.next/
+**/.vercel/
+**/*.tsbuildinfo
+**/.env
+**/.env.*
+corpus-explorer/data/review.db
+corpus-explorer/data/review.db-wal
+corpus-explorer/data/review.db-shm
+corpus-explorer/data/harvest-checkpoint.json

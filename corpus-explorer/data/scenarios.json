@@ -1,0 +1,2076 @@
+{
+  "run": {
+    "runId": "extract-2026-09-25T10-19-41-481Z",
+    "startedAt": "2026-09-25T10:19:41.484Z",
+    "extractor": "deterministic-ruleset-v0",
+    "extractorKind": "rule-based stand-in for the LLM pipeline",
+    "model": null,
+    "prompt": null,
+    "settings": {
+      "rulesetHash": "53a73382ab9bf254",
+      "causalElementTypes": [
+        "sequence of events",
+        "mechanism",
+        "causal relationship",
+        "condition leading to outcome"
+      ],
+      "directRule": "AI marker AND harm marker AND >=1 causal element within one sentence",
+      "inferredRule": "AI marker and (harm marker AND causal element) in different sentences",
+      "completenessRule": ">=3 named pathway stages in the passage counts as complete",
+      "duplicateRule": "Jaccard >= 0.6 over content tokens of the passage",
+      "textScope": "title and abstract only",
+      "temperature": null
+    },
+    "deviations": [
+      "Extraction ran on titles and abstracts, not full texts, because that is the text the arXiv and OpenAlex APIs return. Passages are therefore short and completeness is systematically understated.",
+      "A deterministic ruleset stands in for the LLM. Direct/inferred labels follow a syntactic rule, where an LLM would follow a semantic judgement. Expect the LLM to find more inferred scenarios than this extractor does.",
+      "12 hand-read sources were not extracted. Only the reviewer's own note is stored for them, and emitting that as a passage would present paraphrase as quotation. They carry a reviewer scenario estimate instead, totalling 46."
+    ],
+    "heldForFullText": 12,
+    "heldForFullTextEstimate": 46,
+    "sourcesProcessed": 55,
+    "scenariosExtracted": 52,
+    "byExtractionType": {
+      "inferred": 31,
+      "direct": 21
+    },
+    "byCompleteness": {
+      "partial": 51,
+      "complete": 1
+    },
+    "duplicatesFlagged": 0,
+    "infoHazardFlagged": 0,
+    "sourcesYieldingNone": 7
+  },
+  "perSource": {
+    "a-blind-spot-in-alignment-c95217": 1,
+    "artificial-intelligence-and-biosecurity--757d90": 1,
+    "can-large-language-models-design-9d0ff4": 1,
+    "propensitybench-evaluating-latent-safety-f551bf": 1,
+    "biothreat-benchmark-generation-framework-069db3": 1,
+    "biothreat-benchmark-generation-framework-cbcf2b": 1,
+    "the-biosecurity-blind-spot-systematic-02d4c5": 1,
+    "an-early-warning-of-emerging-bf22bd": 0,
+    "biothreat-benchmark-generation-framework-ddac59": 1,
+    "artificial-intelligence-and-biological-m-c3438f": 1,
+    "the-wmdp-benchmark-measuring-and-aa2286": 1,
+    "contemporary-ai-foundation-models-increa-583dd9": 1,
+    "measuring-mid-2025-llm-assistance-308953": 1,
+    "llm-novice-uplift-on-dual-bed447": 1,
+    "large-language-model-for-knowledge-67b071": 1,
+    "responsible-ai-in-biotechnology-balancin-c4730f": 1,
+    "biosecurity-risk-assessment-for-the-9ea27f": 1,
+    "dual-use-capabilities-of-concern-bd7be8": 1,
+    "protecting-society-from-ai-misuse-92bd46": 2,
+    "biosecurity-and-artificial-intelligence--2e87fc": 2,
+    "emerging-technologies-transforming-the-f-ad7e02": 1,
+    "genomic-language-models-could-transform-21e1b4": 1,
+    "artificial-intelligence-and-synthetic-bi-29a4c3": 1,
+    "managing-misuse-risk-for-dual-87d3d5": 2,
+    "large-language-model-agents-for-895098": 0,
+    "scisafeeval-a-comprehensive-benchmark-fo-c94b8c": 1,
+    "model-capability-assessment-and-safeguar-af9441": 1,
+    "mitigating-risks-at-the-intersection-e537fa": 0,
+    "agentic-baim-llm-evaluation-able-e3c26c": 1,
+    "towards-responsible-governance-of-biolog-101ef6": 1,
+    "know-your-scientist-kyc-as-16b398": 1,
+    "generative-modeling-in-protein-design-127930": 1,
+    "safebench-seq-a-homology-clustered-143d6e": 1,
+    "the-convergence-of-ai-and-3b22c2": 1,
+    "from-turing-to-tomorrow-the-a561cd": 1,
+    "a-machine-learning-toolkit-for-96a45d": 0,
+    "protein-design-generative-ai-and-9304e5": 1,
+    "securing-dual-use-pathogen-data-e6434e": 1,
+    "the-whack-a-mole-governance-456302": 2,
+    "generative-ai-for-biosciences-emerging-4cf348": 1,
+    "from-hard-refusals-to-safe-122d64": 1,
+    "securing-the-language-of-life-cc264a": 1,
+    "knowledge-graph-analysis-of-legal-42edc3": 1,
+    "divide-consult-conquer-capability-launde-b6b16e": 1,
+    "preventing-jailbreak-prompts-as-maliciou-d3a94c": 1,
+    "improving-governance-in-the-age-3f3793": 1,
+    "bioterrorism-and-global-politics-strengt-13f07a": 1,
+    "biotier-a-refusal-benchmark-for-942c43": 1,
+    "can-large-language-models-democratize-13619b": 0,
+    "quantifying-cbrn-risk-in-frontier-aad61d": 1,
+    "practical-questions-for-securing-nucleic-26223b": 0,
+    "grand-challenge-in-biosafety-and-967f52": 1,
+    "safeguarding-mail-order-dna-synthesis-f67de8": 1,
+    "peptide-toxins-as-biothreats-and-68157b": 0,
+    "the-evolving-role-of-artificial-bc8cd8": 1
+  },
+  "scenarios": [
+    {
+      "id": "a-blind-spot-in-alignment-c95217--s1",
+      "sourceId": "a-blind-spot-in-alignment-c95217",
+      "sourceTitle": "A Blind Spot in Alignment: Quantifying Biosecurity Risks in Large Language Models",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2608.02684v2",
+      "passage": "Large Language Models (LLMs) are accelerating biological research, yet this same capability poses a critical biosecurity threat: models that assist in protein engineering can equally be prompted to generate predicted toxin-like sequences, potentially lowering the barrier to biological misuse. […] As a first step toward mitigation, we provide BioSafe-Guard, a domain-specialized classifier that substantially reduces predicted functional risk while preserving benign utility.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events",
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" and \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 4 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 4,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "artificial-intelligence-and-biosecurity--757d90--s1",
+      "sourceId": "artificial-intelligence-and-biosecurity--757d90",
+      "sourceTitle": "Artificial intelligence and biosecurity: capabilities, threat pathways, and defense-in-depth governance",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2609.16213v1",
+      "passage": "Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. […] However, their biosecurity risk depends not only on what the AI can do, but also on who uses it, their expertise and intent, their access to laboratory tools and materials, and the safeguards in place.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and capability / acquisition, but says nothing about release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "can-large-language-models-design-9d0ff4--s1",
+      "sourceId": "can-large-language-models-design-9d0ff4",
+      "sourceTitle": "Can Large Language Models Design Biological Weapons? Evaluating Moremi Bio",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2505.17154v1",
+      "passage": "Through quantitative risk assessments and scenario analyses, we identify dual-use capabilities in current LLM-enabled biodesign pipelines and propose multi-layered mitigation strategies.",
+      "passageIndex": 5,
+      "extractionType": "direct",
+      "causalElements": [
+        "sequence of events",
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains causal elements of type \"sequence of events\" and \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "propensitybench-evaluating-latent-safety-f551bf--s1",
+      "sourceId": "propensitybench-evaluating-latent-safety-f551bf",
+      "sourceTitle": "PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2511.20703v1",
+      "passage": "Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous or high-risk capabilities, posing frontier risks. […] Current safety evaluations primarily test for what a model \\textit{can} do - its capabilities - without assessing what it $\\textit{would}$ do if endowed with high-risk capabilities.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"condition leading to outcome\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "acquire"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biothreat-benchmark-generation-framework-069db3--s1",
+      "sourceId": "biothreat-benchmark-generation-framework-069db3",
+      "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models II: Benchmark Generation Process",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2512.08451v1",
+      "passage": "The potential for rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons has generated significant policy, academic, and public concern. […] The development process involved three complementary approaches: 1) web-based prompt generation, 2) red teaming, and 3) mining existing benchmark corpora, to generate over 7,000 potential benchmarks linked to the Task-Query Architecture that was developed during the first component of the project.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation, but says nothing about capability / acquisition or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation"
+      ],
+      "missingPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "biothreat-benchmark-generation-framework-cbcf2b--s1",
+      "sourceId": "biothreat-benchmark-generation-framework-cbcf2b",
+      "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models III: Implementing the Bacterial Biothreat Benchmark (B3) Dataset",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2512.08459v1",
+      "passage": "Overall, the pilot demonstrated that the B3 dataset offers a viable, nuanced method for rapidly assessing the biosecurity risk posed by a LLM, identifying the key sources of that risk and providing guidance for priority areas of mitigation priority.",
+      "passageIndex": 5,
+      "extractionType": "direct",
+      "causalElements": [
+        "mechanism"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"mechanism\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "the-biosecurity-blind-spot-systematic-02d4c5--s1",
+      "sourceId": "the-biosecurity-blind-spot-systematic-02d4c5",
+      "sourceTitle": "The Biosecurity Blind Spot: Systematic Dual-use Detection in Open Science Infrastructure",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2605.28843v1",
+      "passage": "AI is transforming life sciences research at unprecedented speed, accelerating discovery across protein structure prediction, genome modeling, and drug development (Jumper et al., 2021; Mak et al., 2024). […] Yet this rapid advancement, coupled with the open science movement, introduces significant dual-use research concerns that have received limited empirical scrutiny. […] Here we present the first systematic analysis of dual-use research of concern (DURC) content on open preprint servers.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biothreat-benchmark-generation-framework-ddac59--s1",
+      "sourceId": "biothreat-benchmark-generation-framework-ddac59",
+      "sourceTitle": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models I: The Task-Query Architecture",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2512.08130v1",
+      "passage": "Both model developers and policymakers seek to quantify and mitigate the risk of rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons. […] This paper describes the first component of a novel Biothreat Benchmark Generation (BBG) Framework.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation, but says nothing about capability / acquisition or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation"
+      ],
+      "missingPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "artificial-intelligence-and-biological-m-c3438f--s1",
+      "sourceId": "artificial-intelligence-and-biological-m-c3438f",
+      "sourceTitle": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+      "sourceYear": 2023,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2306.13952v8",
+      "passage": "As advancements in artificial intelligence (AI) propel progress in the life sciences, they may also enable the weaponisation and misuse of biological agents.",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "weaponi"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "the-wmdp-benchmark-measuring-and-aa2286--s1",
+      "sourceId": "the-wmdp-benchmark-measuring-and-aa2286",
+      "sourceTitle": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2403.03218v7",
+      "passage": "RMU reduces model performance on WMDP while maintaining general capabilities in areas such as biology and computer science, suggesting that unlearning may be a concrete path towards reducing malicious use from LLMs.",
+      "passageIndex": 8,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "contemporary-ai-foundation-models-increa-583dd9--s1",
+      "sourceId": "contemporary-ai-foundation-models-increa-583dd9",
+      "sourceTitle": "Contemporary AI foundation models increase biological weapons risk",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2506.13798v1",
+      "passage": "The rapid advancement of artificial intelligence has raised concerns about its potential to facilitate biological weapons development. […] First, assessments mistakenly assume biological weapons development requires tacit knowledge, or skills gained through hands-on experience that cannot be easily verbalized.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "measuring-mid-2025-llm-assistance-308953--s1",
+      "sourceId": "measuring-mid-2025-llm-assistance-308953",
+      "sourceTitle": "Measuring Mid-2025 LLM-Assistance on Novice Performance in Biology",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2602.16703v1",
+      "passage": "Large language models (LLMs) perform strongly on biological benchmarks, raising concerns that they may help novice actors acquire dual-use laboratory skills. […] To address this, we conducted a pre-registered, investigator-blinded, randomized controlled trial (June-August 2025; n = 153) evaluating whether LLMs improve novice performance in tasks that collectively model a viral reverse genetics workflow.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and capability / acquisition, but says nothing about release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "acquire"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "llm-novice-uplift-on-dual-bed447--s1",
+      "sourceId": "llm-novice-uplift-on-dual-bed447",
+      "sourceTitle": "LLM Novice Uplift on Dual-Use, In Silico Biology Tasks",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2602.23329v2",
+      "passage": "Large language models (LLMs) perform increasingly well on biology benchmarks, but it remains unclear whether they uplift novice users -- i.e., enable humans to perform better than with internet-only resources. […] This uncertainty is central to understanding both scientific acceleration and dual-use risk.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "large-language-model-for-knowledge-67b071--s1",
+      "sourceId": "large-language-model-for-knowledge-67b071",
+      "sourceTitle": "Large language model for knowledge synthesis and AI-enhanced biomanufacturing",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1016/j.tibtech.2025.02.008",
+      "passage": "Large language models (LLMs) are transforming synthetic biology (SynBio) education and research. […] Finally, we emphasize the need for establishing benchmarks for LLMs, fostering trustworthy knowledge synthesis, developing biosecurity frameworks to prevent misuse, and encouraging collaboration among artificial intelligence (AI) scientists, SynBio researchers, and bioprocess engineers. […] First, we summarize recent developments and compare the capabilities of US and Chinese language models in addressing fundamental SynBio questions.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 5 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 5,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "synthesis"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "responsible-ai-in-biotechnology-balancin-c4730f--s1",
+      "sourceId": "responsible-ai-in-biotechnology-balancin-c4730f",
+      "sourceTitle": "Responsible AI in biotechnology: balancing discovery, innovation and biosecurity risks",
+      "sourceYear": 2025,
+      "sourceType": "Institutional",
+      "sourceUrl": "https://doi.org/10.3389/fbioe.2025.1537471",
+      "passage": "The integration of artificial intelligence (AI) in protein design presents unparalleled opportunities for innovation in bioengineering and biotechnology. […] This review examines the changing landscape of bioweapon risks, the dual-use potential of AI-driven bioengineering tools, and the necessary safeguards to prevent misuse while fostering innovation. […] However, it also raises significant biosecurity concerns.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biosecurity-risk-assessment-for-the-9ea27f--s1",
+      "sourceId": "biosecurity-risk-assessment-for-the-9ea27f",
+      "sourceTitle": "Biosecurity Risk Assessment for the Use of Artificial Intelligence in Synthetic Biology",
+      "sourceYear": 2024,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1089/apb.2023.0031",
+      "passage": "The biosecurity risk assessment tools and methodology presented here are the first provided in the literature and will be instrumental steps toward the responsible integration of AI in synthetic biology.",
+      "passageIndex": 9,
+      "extractionType": "direct",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"sequence of events\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "dual-use-capabilities-of-concern-bd7be8--s1",
+      "sourceId": "dual-use-capabilities-of-concern-bd7be8",
+      "sourceTitle": "Dual-use capabilities of concern of biological AI models",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1371/journal.pcbi.1012975",
+      "passage": "Of these dual-use capabilities, we argue that AI model evaluations should prioritize addressing those which enable high-consequence risks (i.e., large-scale harm to the public, such as transmissible disease outbreaks that could develop into pandemics), and that these risks should be evaluated prior to model deployment so as to allow potential biosafety and/or biosecurity measures.",
+      "passageIndex": 5,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "protecting-society-from-ai-misuse-92bd46--s1",
+      "sourceId": "protecting-society-from-ai-misuse-92bd46",
+      "sourceTitle": "Protecting society from AI misuse: when are restrictions on capabilities warranted?",
+      "sourceYear": 2024,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1007/s00146-024-02130-8",
+      "passage": "For example, concerns about AI-enabled bioweapon acquisition have motivated efforts to introduce DNA synthesis screening.",
+      "passageIndex": 5,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and capability / acquisition, but says nothing about release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "acquisition",
+        "synthesis"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "protecting-society-from-ai-misuse-92bd46--s2",
+      "sourceId": "protecting-society-from-ai-misuse-92bd46",
+      "sourceTitle": "Protecting society from AI misuse: when are restrictions on capabilities warranted?",
+      "sourceYear": 2024,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1007/s00146-024-02130-8",
+      "passage": "We provide a taxonomy of interventions that can reduce AI misuse, focusing on the specific steps required for a misuse to cause harm (the Misuse Chain), and a framework to determine if an intervention is warranted.",
+      "passageIndex": 7,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship",
+        "condition leading to outcome"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains causal elements of type \"causal relationship\" and \"condition leading to outcome\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biosecurity-and-artificial-intelligence--2e87fc--s1",
+      "sourceId": "biosecurity-and-artificial-intelligence--2e87fc",
+      "sourceTitle": "Biosecurity and Artificial Intelligence in the Life Sciences",
+      "sourceYear": 2024,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1089/genbio.2024.0051",
+      "passage": "For example, the National Academies of Sciences, Engineering, and Medicine (NASEM) is assessing the ways in which AI can increase these biosecurity risks and especially pandemic threats.",
+      "passageIndex": 2,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition and release / harm, but says nothing about intent / ideation. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biosecurity-and-artificial-intelligence--2e87fc--s2",
+      "sourceId": "biosecurity-and-artificial-intelligence--2e87fc",
+      "sourceTitle": "Biosecurity and Artificial Intelligence in the Life Sciences",
+      "sourceYear": 2024,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1089/genbio.2024.0051",
+      "passage": "On the other hand, misuse of AI is secondary to the science and most scientists do not consider misuse potential unless they need or must.",
+      "passageIndex": 4,
+      "extractionType": "direct",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"condition leading to outcome\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "emerging-technologies-transforming-the-f-ad7e02--s1",
+      "sourceId": "emerging-technologies-transforming-the-f-ad7e02",
+      "sourceTitle": "Emerging technologies transforming the future of global biosecurity",
+      "sourceYear": 2025,
+      "sourceType": "Institutional",
+      "sourceUrl": "https://doi.org/10.3389/fdgth.2025.1622123",
+      "passage": "The convergence of artificial intelligence and synthetic biology offers transformative opportunities to enhance global biosecurity. […] Emerging technologies promise rapid detection, containment, and mitigation of global biological threats, while simultaneously raising complex ethical and security challenges. […] This research aims to critically examine advances in AI applications for biosecurity, innovations in vaccine development enabled by synthetic biology, and the risks associated with the democratization of powerful biotechnological tools.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 2,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "genomic-language-models-could-transform-21e1b4--s1",
+      "sourceId": "genomic-language-models-could-transform-21e1b4",
+      "sourceTitle": "Genomic language models could transform medicine but not yet",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1038/s41746-025-01603-4",
+      "passage": "In February 2025, researchers announced Evo2, a genome language model (gLM) trained on over 128,000 genomes, encompassing over 9.3 trillion DNA base pairs 1 . […] This article examines gLMs in the context of Evo2, highlighting their potential for biological research and medicine while exploring the technical barriers and ethical challenges—from data privacy to dual-use risks—that will shape their clinical future. […] Non-coding DNA contains crucial regulatory elements that coordinate gene expression across different cell types and developmental stages 4 , and the precise mechanisms governing this regulation are increasingly being unraveled.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events",
+        "mechanism"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" and \"mechanism\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 7 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 7,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "artificial-intelligence-and-synthetic-bi-29a4c3--s1",
+      "sourceId": "artificial-intelligence-and-synthetic-bi-29a4c3",
+      "sourceTitle": "Artificial intelligence and synthetic biology: biosecurity risks, dual-use concerns, and governance pathways",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1007/s43681-025-00872-9",
+      "passage": "Artificial intelligence (AI) is accelerating discovery timelines in synthetic biology, expanding opportunities for therapeutic breakthroughs, sustainable bio-manufacturing, and rapid response to health and environmental challenges. […] At the same time, this acceleration shifts biosecurity risks from physical materials toward a broader socio-technical landscape involving models, datasets, and distributed automation. […] Findings indicate that AI systems consistently increase design throughput and lower expertise barriers, enabling faster medical and industrial innovation but also heightening risks of repurposing for harmful molecules or genetic sequences.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition and release / harm, but says nothing about intent / ideation. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "managing-misuse-risk-for-dual-87d3d5--s1",
+      "sourceId": "managing-misuse-risk-for-dual-87d3d5",
+      "sourceTitle": "Managing Misuse Risk for Dual-Use Foundation Models",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.6028/nist.ai.800-1.2pd",
+      "passage": "This document provides voluntary guidelines for improving the safety, security, and trustworthiness of dual-use foundation models i (hereafter referred to as \"foundation models\") ii consistent with the National AI Initiative Act, iii Executive Order 14110, iv and the October 24, 2024, Presidential National Security Memorandum on AI. v,1 Specifically, it focuses on managing the risk that such models will be deliberately misused to cause harm to public safety or national security",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and release / harm, but says nothing about capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "missingPhases": [
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 3,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "managing-misuse-risk-for-dual-87d3d5--s2",
+      "sourceId": "managing-misuse-risk-for-dual-87d3d5",
+      "sourceTitle": "Managing Misuse Risk for Dual-Use Foundation Models",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.6028/nist.ai.800-1.2pd",
+      "passage": "Actors should also collaborate to understand and mitigate misuse risks along the AI supply chain and throughout the AI lifecycle, such as the information sharing recommendations outlined in Objective 7 in Section 5",
+      "passageIndex": 17,
+      "extractionType": "direct",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"condition leading to outcome\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation, but says nothing about capability / acquisition or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation"
+      ],
+      "missingPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 3,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c--s1",
+      "sourceId": "scisafeeval-a-comprehensive-benchmark-fo-c94b8c",
+      "sourceTitle": "SciSafeEval: A Comprehensive Benchmark for Safety Alignment of Large Language Models in Scientific Tasks",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "https://doi.org/10.48550/arxiv.2410.03769",
+      "passage": "Large language models (LLMs) have a transformative impact on a variety of scientific tasks across disciplines including biology, chemistry, medicine, and physics. […] We evaluate LLMs in zero-shot, few-shot and chain-of-thought settings, and introduce a \"jailbreak\" enhancement feature that challenges LLMs equipped with safety guardrails, rigorously testing their defenses against malicious intention. […] Moreover, the safety mechanisms of LLMs in scientific tasks are insufficiently studied.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "mechanism"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"mechanism\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 5 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 5,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation, but says nothing about capability / acquisition or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation"
+      ],
+      "missingPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "model-capability-assessment-and-safeguar-af9441--s1",
+      "sourceId": "model-capability-assessment-and-safeguar-af9441",
+      "sourceTitle": "Model Capability Assessment and Safeguards for Biological Weaponization",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2604.19811v2",
+      "passage": "AI leaders and safety reports increasingly warn that advances in model reasoning may enable biological misuse, including by low-expertise users, while major labs describe safeguards as expanding but still evolving rather than settled.",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "agentic-baim-llm-evaluation-able-e3c26c--s1",
+      "sourceId": "agentic-baim-llm-evaluation-able-e3c26c",
+      "sourceTitle": "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2609.05818v1",
+      "passage": "We introduce ABLE, a benchmark for evaluating LLM agents' ability to use biological AI models (BAIMs), such as ProteinMPNN and AlphaFold3, in dual-use protein design workflows.",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"sequence of events\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "towards-responsible-governance-of-biolog-101ef6--s1",
+      "sourceId": "towards-responsible-governance-of-biolog-101ef6",
+      "sourceTitle": "Towards Responsible Governance of Biological Design Tools",
+      "sourceYear": 2023,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2311.15936v3",
+      "passage": "Recent advancements in generative machine learning have enabled rapid progress in biological design tools (BDTs) such as protein structure and sequence prediction models. […] The unprecedented predictive accuracy and novel design capabilities of BDTs present new and significant dual-use risks.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "know-your-scientist-kyc-as-16b398--s1",
+      "sourceId": "know-your-scientist-kyc-as-16b398",
+      "sourceTitle": "Know Your Scientist: KYC as Biosecurity Infrastructure",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2602.06172v1",
+      "passage": "Biological AI tools for protein design and structure prediction are advancing rapidly, creating dual-use risks that existing safeguards cannot adequately address. […] Current model-level restrictions, including keyword filtering, output screening, and content-based access denials, are fundamentally ill-suited to biology, where reliable function prediction remains beyond reach and novel threats evade detection by design.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"condition leading to outcome\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "generative-modeling-in-protein-design-127930--s1",
+      "sourceId": "generative-modeling-in-protein-design-127930",
+      "sourceTitle": "Generative Modeling in Protein Design: Neural Representations, Conditional Generation, and Evaluation Standards",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2603.26378v1",
+      "passage": "Generative modeling has become a central paradigm in protein research, extending machine learning beyond structure prediction toward sequence design, backbone generation, inverse folding, and biomolecular interaction modeling. […] We conclude with critical open challenges: modeling conformational dynamics and intrinsically disordered regions, scaling to large assemblies while maintaining efficiency, and developing robust safety frameworks for dual-use biosecurity risks. […] Beyond cataloging methods, we compare assumptions, conditioning mechanisms, and controllability, and we synthesize evaluation best practices that emphasize leakage-aware splits, physical validity checks, and function-oriented benchmarks.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "mechanism"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"mechanism\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 4 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 4,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "synthesize"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "safebench-seq-a-homology-clustered-143d6e--s1",
+      "sourceId": "safebench-seq-a-homology-clustered-143d6e",
+      "sourceTitle": "SafeBench-Seq: A Homology-Clustered, CPU-Only Baseline for Protein Hazard Screening with Physicochemical/Composition Features and Cluster-Aware Confidence Intervals",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2512.17527v1",
+      "passage": "Foundation models for protein design raise concrete biosecurity risks, yet the community lacks a simple, reproducible baseline for sequence-level hazard screening that is explicitly evaluated under homology control and runs on commodity CPUs. […] We report discrimination (AUROC/AUPRC) and screening-operating points (TPR@1% FPR; FPR@95% TPR) with 95% bootstrap confidence intervals (n=200), and we provide calibrated probabilities via CalibratedClassifierCV (isotonic for Logistic Regression / Random Forest; Platt sigmoid for Linear SVM).",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "mechanism"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"mechanism\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "the-convergence-of-ai-and-3b22c2--s1",
+      "sourceId": "the-convergence-of-ai-and-3b22c2",
+      "sourceTitle": "The Convergence of AI and Synthetic Biology: The Looming Deluge",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2404.18973v1",
+      "passage": "The convergence of artificial intelligence (AI) and synthetic biology is rapidly accelerating the pace of biological discovery and engineering. […] However, it also poses significant risks around reliability, dual use, and governance. […] AI techniques, such as large language models and biological design tools, are enabling the automated design, build, test, and learning cycles for engineered biological systems.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "mechanism",
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"mechanism\" and \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "from-turing-to-tomorrow-the-a561cd--s1",
+      "sourceId": "from-turing-to-tomorrow-the-a561cd",
+      "sourceTitle": "From Turing to Tomorrow: The UK's Approach to AI Regulation",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2507.03050v1",
+      "passage": "The UK has pursued a distinctive path in AI regulation: less cautious than the EU but more willing to address risks than the US, and has emerged as a global leader in coordinating AI safety efforts. […] Impressive developments from companies like London-based DeepMind began to spark concerns in the UK about catastrophic risks from around 2012, although regulatory discussion at the time focussed on bias and discrimination. […] The UK responded by establishing an AI Safety Institute to monitor risks and hosting the first international AI Safety Summit in 2023, but - unlike the EU - refrained from regulating frontier AI development in addition to its use.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 4 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 4,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "protein-design-generative-ai-and-9304e5--s1",
+      "sourceId": "protein-design-generative-ai-and-9304e5",
+      "sourceTitle": "Protein design, generative AI and biological security",
+      "sourceYear": 2026,
+      "sourceType": "Institutional",
+      "sourceUrl": "https://doi.org/10.3389/fmicb.2026.1817535",
+      "passage": "Artificial intelligence-driven protein design has fundamentally changed what is possible in protein engineering. […] AI-generated proteins may be functionally equivalent to known toxins while sharing little sequence similarity, rendering current homology-based screening blind to such designs. […] Deep learning models can now generate entirely novel sequences that fold into defined structures, enabling advances in therapeutics, vaccine development, and industrial biotechnology.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 4 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 4,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "securing-dual-use-pathogen-data-e6434e--s1",
+      "sourceId": "securing-dual-use-pathogen-data-e6434e",
+      "sourceTitle": "Securing Dual-Use Pathogen Data of Concern",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2602.08061v1",
+      "passage": "Training data is an essential input into creating competent artificial intelligence (AI) models. […] For this reason, an international group of more than 100 researchers at the recent 50th anniversary Asilomar Conference endorsed data controls to prevent the use of AI for harmful applications such as bioweapons development. […] Each level contains specific data types, based on their expected ability to contribute to capabilities of concern when used to train AI models.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"condition leading to outcome\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 5 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 5,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "the-whack-a-mole-governance-456302--s1",
+      "sourceId": "the-whack-a-mole-governance-456302",
+      "sourceTitle": "The whack-a-mole governance challenge for AI-enabled synthetic biology: literature review and emerging frameworks",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2402.00312v1",
+      "passage": "AI-enabled synthetic biology has tremendous potential but also significantly increases biorisks and brings about a new set of dual use concerns.",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "the-whack-a-mole-governance-456302--s2",
+      "sourceId": "the-whack-a-mole-governance-456302",
+      "sourceTitle": "The whack-a-mole governance challenge for AI-enabled synthetic biology: literature review and emerging frameworks",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2402.00312v1",
+      "passage": "How to achieve early warning systems that enable prevention and mitigation of future AI-enabled biohazards from the lab, from deliberate misuse, or from the public realm, will constantly need to evolve, and adaptive, interactive approaches should emerge.",
+      "passageIndex": 4,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation, but says nothing about capability / acquisition or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation"
+      ],
+      "missingPhases": [
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "generative-ai-for-biosciences-emerging-4cf348--s1",
+      "sourceId": "generative-ai-for-biosciences-emerging-4cf348",
+      "sourceTitle": "Generative AI for Biosciences: Emerging Threats and Roadmap to Biosecurity",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2510.15975v2",
+      "passage": "In this Perspective, we first outline the current state of GenAI in the biosciences and emerging threat vectors ranging from jailbreak attacks and privacy risks to the dual-use challenges posed by autonomous AI agents.",
+      "passageIndex": 3,
+      "extractionType": "direct",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"sequence of events\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "from-hard-refusals-to-safe-122d64--s1",
+      "sourceId": "from-hard-refusals-to-safe-122d64",
+      "sourceTitle": "From Hard Refusals to Safe-Completions: Toward Output-Centric Safety Training",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2508.09224v1",
+      "passage": "We incorporated this approach into GPT-5 and find that across both production comparisons and internally controlled experiments, safe-completion training improves safety (especially on dual-use prompts), reduces the severity of residual safety failures, and substantially increases model helpfulness.",
+      "passageIndex": 5,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "production"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "securing-the-language-of-life-cc264a--s1",
+      "sourceId": "securing-the-language-of-life-cc264a",
+      "sourceTitle": "Securing the Language of Life: Inheritable Watermarks from DNA Language Models to Proteins",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2509.18207v1",
+      "passage": "DNA language models have revolutionized our ability to understand and design DNA sequences--the fundamental language of life--with unprecedented precision, enabling transformative applications in therapeutics, synthetic biology, and gene editing. […] However, this capability also poses substantial dual-use risks, including the potential for creating pathogens, viruses, and even bioweapons.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "knowledge-graph-analysis-of-legal-42edc3--s1",
+      "sourceId": "knowledge-graph-analysis-of-legal-42edc3",
+      "sourceTitle": "Knowledge Graph Analysis of Legal Understanding and Violations in LLMs",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2511.08593v1",
+      "passage": "The rise of Large Language Models (LLMs) offers transformative potential for interpreting complex legal frameworks, such as Title 18 Section 175 of the US Code, which governs biological weapons. […] Our findings reveal significant limitations in LLMs' reasoning and safety mechanisms, but they also point the way forward.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "mechanism"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"mechanism\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 5 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 5,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "divide-consult-conquer-capability-launde-b6b16e--s1",
+      "sourceId": "divide-consult-conquer-capability-launde-b6b16e",
+      "sourceTitle": "Divide, Consult, Conquer: Capability Laundering Through Aligned LLMs",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2609.15383v1",
+      "passage": "Language model safety is typically evaluated one interaction at a time. […] For CBRN, we measure uplift across eight steps of a hypothetical bioweapon attack chain and find that consultation raises Gemma-4-31B's mean rubric score from 62.3 to 83.1 on a 100-point rubric scale.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 8 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 8,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "preventing-jailbreak-prompts-as-maliciou-d3a94c--s1",
+      "sourceId": "preventing-jailbreak-prompts-as-maliciou-d3a94c",
+      "sourceTitle": "Preventing Jailbreak Prompts as Malicious Tools for Cybercriminals: A Cyber Defense Perspective",
+      "sourceYear": 2024,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2411.16642v1",
+      "passage": "Jailbreak prompts pose a significant threat in AI and cybersecurity, as they are crafted to bypass ethical safeguards in large language models, potentially enabling misuse by cybercriminals.",
+      "passageIndex": 0,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "improving-governance-in-the-age-3f3793--s1",
+      "sourceId": "improving-governance-in-the-age-3f3793",
+      "sourceTitle": "Improving governance in the age of synthetic biology, artificial intelligence, and diverging threats",
+      "sourceYear": 2026,
+      "sourceType": "Institutional",
+      "sourceUrl": "https://doi.org/10.3389/fbioe.2026.1705143",
+      "passage": "Introduction: Advancements in synthetic biology (SynBio) and other emerging and converging technologies, such as artificial intelligence (AI) additive manufacturing (3D printing), and nanotechnology are driving progress at an unprecedented pace. […] However, these promising and groundbreaking advances could also lead to novel biological risks, including the potential development of SynBio-enabled bioweapons (BW).",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Names no pathway phase, so the passage asserts a relationship without describing how the harm is reached.",
+      "pathwayPhases": [],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "bioterrorism-and-global-politics-strengt-13f07a--s1",
+      "sourceId": "bioterrorism-and-global-politics-strengt-13f07a",
+      "sourceTitle": "Bioterrorism and Global Politics: Strengthening International Law for Emerging Biological Threats",
+      "sourceYear": 2026,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.70670/sra.v4i1.1732",
+      "passage": "It further analyzes how contemporary dual-use technologies, particularly CRISPR-Cas systems and AI-enabled biological design, have lowered barriers to misuse by both state and non-state actors.",
+      "passageIndex": 2,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and capability / acquisition, but says nothing about release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "biotier-a-refusal-benchmark-for-942c43--s1",
+      "sourceId": "biotier-a-refusal-benchmark-for-942c43",
+      "sourceTitle": "BioTIER: A Refusal Benchmark for Targeted Biological Risk Mitigation",
+      "sourceYear": 2026,
+      "sourceType": "Preprint",
+      "sourceUrl": "https://openalex.org/W7169689017",
+      "passage": "As large language models become increasingly capable, concerns about their potential to assist with biological misuse continue to grow. […] To address this, we introduce BioTIER (Biological Targeted Information for Exclusion and Refusal), a benchmark designed to enable more targeted biological risk mitigation.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"causal relationship\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 3,
+      "inferenceStrength": "near",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "quantifying-cbrn-risk-in-frontier-aad61d--s1",
+      "sourceId": "quantifying-cbrn-risk-in-frontier-aad61d",
+      "sourceTitle": "Quantifying CBRN Risk in Frontier Models",
+      "sourceYear": 2025,
+      "sourceType": "Preprint",
+      "sourceUrl": "http://arxiv.org/abs/2510.21133v1",
+      "passage": "Frontier Large Language Models (LLMs) pose unprecedented dual-use risks through the potential proliferation of chemical, biological, radiological, and nuclear (CBRN) weapons knowledge. […] We present the first comprehensive evaluation of 10 leading commercial LLMs against both a novel 200-prompt CBRN dataset and a 180-prompt subset of the FORTRESS benchmark, using a rigorous three-tier attack methodology.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place.",
+      "inferenceGap": "the causal element sits in a third sentence again",
+      "fragmentSpread": 1,
+      "inferenceStrength": "adjacent",
+      "completeness": "partial",
+      "completenessNote": "Touches release / harm, but says nothing about intent / ideation or capability / acquisition. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "release / harm"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "grand-challenge-in-biosafety-and-967f52--s1",
+      "sourceId": "grand-challenge-in-biosafety-and-967f52",
+      "sourceTitle": "Grand challenge in biosafety and biosecurity",
+      "sourceYear": 2025,
+      "sourceType": "Institutional",
+      "sourceUrl": "https://doi.org/10.3389/fbioe.2024.1538723",
+      "passage": "More recently, the integration of AI with engineering biology has introduced biosecurity challenges that will need to be addressed (De Haro, L. […] To further address these concerns, the World Health Organization (WHO) developed the \"Global Guidance Framework for the Responsible Use of the Life Sciences: Mitigating Biorisks and Governing Dual-Use Research\" (WHO, 2022). […] Many of the high containment labs are in or planned for urban centers where an accidental or intentional release could be problematic (Klotz, L.",
+      "passageIndex": 58,
+      "extractionType": "inferred",
+      "causalElements": [
+        "condition leading to outcome"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"condition leading to outcome\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 52 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 52,
+      "inferenceStrength": "distant",
+      "completeness": "complete",
+      "completenessNote": "Touches all three pathway phases (intent / ideation; capability / acquisition; release / harm), so the account runs from intent to harm without an unstated jump.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition",
+        "release / harm"
+      ],
+      "missingPhases": [],
+      "pathwayStages": [
+        "release"
+      ],
+      "unsplittableFragments": 1,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    },
+    {
+      "id": "safeguarding-mail-order-dna-synthesis-f67de8--s1",
+      "sourceId": "safeguarding-mail-order-dna-synthesis-f67de8",
+      "sourceTitle": "Safeguarding Mail-Order DNA Synthesis in the Age of Artificial Intelligence",
+      "sourceYear": 2023,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.1089/apb.2023.0020",
+      "passage": "Introduction: Artificial intelligence (AI) tools continue to be developed and used within the life sciences. […] Results: Generally, chatbots lower barriers to access of information that could be misused while biological design tools may provide new abilities to users with the intent of misuse. […] Conclusion: Mandating mail-order DNA synthesis providers to screen DNA synthesis orders is a critical safeguarding step that should be taken as soon as possible.",
+      "passageIndex": 0,
+      "extractionType": "inferred",
+      "causalElements": [
+        "sequence of events"
+      ],
+      "reasoning": "No single sentence states the whole account: the AI element and the harm outcome are asserted in different sentences, and the causal element sits in a third sentence again. The scenario is assembled by joining the passages, with a causal element of type \"sequence of events\" supplying the link. Labelled inferred because the connection between the AI element and the harm is supplied by the reader, not asserted by the author in one place. The joined passages are 6 sentences apart, so treat this one sceptically: an inference spanning that much of the source is as likely to be unrelated statements placed side by side as a scenario the author implied.",
+      "inferenceGap": "the AI element and the harm outcome are asserted in different sentences; the causal element sits in a third sentence again",
+      "fragmentSpread": 6,
+      "inferenceStrength": "distant",
+      "completeness": "partial",
+      "completenessNote": "Touches intent / ideation and capability / acquisition, but says nothing about release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "intent / ideation",
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "release / harm"
+      ],
+      "pathwayStages": [
+        "synthesis"
+      ],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": false,
+      "sourceStage1": "include"
+    },
+    {
+      "id": "the-evolving-role-of-artificial-bc8cd8--s1",
+      "sourceId": "the-evolving-role-of-artificial-bc8cd8",
+      "sourceTitle": "The Evolving Role of Artificial Intelligence in Medical Genetics: Advancing Healthcare, Research, and Biosafety Management",
+      "sourceYear": 2025,
+      "sourceType": "Peer-reviewed",
+      "sourceUrl": "https://doi.org/10.3390/genes17010006",
+      "passage": "However, this powerful synergy introduces significant ethical, regulatory, and biosecurity challenges, including data privacy, algorithmic bias, and the dual-use risks of AI-enabled genetic engineering.",
+      "passageIndex": 3,
+      "extractionType": "direct",
+      "causalElements": [
+        "causal relationship"
+      ],
+      "reasoning": "The passage names an AI element and a biological harm outcome in the same sentence and contains a causal element of type \"causal relationship\", so the account is stated in the text rather than assembled by the reader.",
+      "completeness": "partial",
+      "completenessNote": "Touches capability / acquisition, but says nothing about intent / ideation or release / harm. The account is a fragment; Workstream 2 should code it for the causal links it does contain.",
+      "pathwayPhases": [
+        "capability / acquisition"
+      ],
+      "missingPhases": [
+        "intent / ideation",
+        "release / harm"
+      ],
+      "pathwayStages": [],
+      "unsplittableFragments": 0,
+      "infoHazard": false,
+      "verification": {
+        "status": "pending",
+        "reviewer": null,
+        "note": null,
+        "decidedAt": null
+      },
+      "provenance": "harvested",
+      "provisional": true,
+      "sourceStage1": "adjudicate"
+    }
+  ]
+}

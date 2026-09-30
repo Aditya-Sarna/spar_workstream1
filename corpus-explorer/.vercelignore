@@ -1,0 +1,4 @@
+data/review.db
+data/review.db-wal
+data/review.db-shm
+.next

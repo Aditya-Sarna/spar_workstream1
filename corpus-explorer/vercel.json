@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "installCommand": "npm ci && npm rebuild better-sqlite3",
+  "buildCommand": "npm run build"
+}

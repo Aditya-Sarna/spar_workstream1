@@ -1,0 +1,764 @@
+[
+  {
+    "id": "rand-2024-redteam",
+    "title": "The Operational Risks of AI in Large-Scale Biological Attacks: Results of a Red-Team Study",
+    "authors": "Mouton, Lucas, Guest",
+    "year": 2024,
+    "venue": "RAND RR-A2977-2",
+    "sourceType": "Red-team study",
+    "url": "https://doi.org/10.7249/rra2977-2",
+    "doi": "10.7249/rra2977-2",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Concludes LLMs gave no measurable uplift over internet-only baseline. Retained: a negative finding about an articulated pathway is evidence about that pathway, not grounds for exclusion.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "none claimed"
+      ],
+      "aiClass": [
+        "LLM"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "red-team or uplift evidence",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 4,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "sandbrink-2023-differentiating",
+    "title": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+    "authors": "Sandbrink",
+    "year": 2023,
+    "venue": "arXiv:2306.13952",
+    "sourceType": "Preprint",
+    "url": "https://arxiv.org/abs/2306.13952",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Origin of the LLM-versus-BDT split and of the barrier/ceiling distinction. Most downstream sources inherit pathways from here. Duplicate: the database search also retrieved this paper as artificial-intelligence-and-biological-m-c3438f, which is the retained record and carries the abstract and both screener verdicts.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E9",
+    "exclusionReason": "Duplicate",
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "load-bearing",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "cltr-2024-nearterm",
+    "title": "The near-term impact of AI on biological misuse",
+    "authors": "Centre for Long-Term Resilience",
+    "year": 2024,
+    "venue": "CLTR",
+    "sourceType": "Institutional",
+    "url": "https://doi.org/10.71172/1ktf-xpxm",
+    "doi": "10.71172/1ktf-xpxm",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Defines uplift operationally and crosses five threat-actor categories against capability trends. Nine explicit hypotheses, each a candidate scenario.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "increases access",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Biological design tool",
+        "Bio foundation model",
+        "Agent / lab automation"
+      ],
+      "stages": [],
+      "aiRole": "load-bearing",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 9,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "cltr-2024-bwchain",
+    "title": "AI-Facilitated Biological Weapon Development",
+    "authors": "Centre for Long-Term Resilience",
+    "year": 2024,
+    "venue": "CLTR",
+    "sourceType": "Institutional",
+    "url": "https://www.longtermresilience.org/reports/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Maps a BW development risk chain from intent to release and marks which steps each AI tool class touches. Closest existing artifact to a causal pathway diagram.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Biological design tool",
+        "Agent / lab automation"
+      ],
+      "stages": [],
+      "aiRole": "load-bearing",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 5,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "cltr-2025-globalriskindex",
+    "title": "Global Risk Index for AI-enabled Biological Tools",
+    "authors": "Centre for Long-Term Resilience",
+    "year": 2025,
+    "venue": "CLTR",
+    "sourceType": "Institutional",
+    "url": "https://www.longtermresilience.org/reports/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Primarily a capability index, but states misuse applications including evasion of detection and countermeasures, which supplies the connective.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "raises ceiling of harm",
+        "increases access"
+      ],
+      "aiClass": [
+        "Biological design tool",
+        "Bio foundation model"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 6,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "cltr-2023-capability",
+    "title": "Capability-Based Risk Assessment for AI-Enabled Biological Tools",
+    "authors": "Centre for Long-Term Resilience",
+    "year": 2023,
+    "venue": "CLTR",
+    "sourceType": "Institutional",
+    "url": "https://doi.org/10.71172/789c-pb5z",
+    "doi": "10.71172/789c-pb5z",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Hypothesises repurposing of design and experimentation capability by malicious actors absent safeguards. Explicitly notes misuse risk above baseline is unestablished.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "present",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 2,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "pannu-2025-dualuse",
+    "title": "Dual-use capabilities of concern of biological AI models",
+    "authors": "Pannu, Bloomfield, MacKnight, Hanke, Zhu, Gomes, et al.",
+    "year": 2025,
+    "venue": "PLOS Computational Biology 21(5):e1012975",
+    "sourceType": "Peer-reviewed",
+    "url": "https://doi.org/10.1371/journal.pcbi.1012975",
+    "doi": "10.1371/journal.pcbi.1012975",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Source of the capability-of-concern framing. Notes only one listed capability (viral serotype immune evasion) has been scientifically validated. Duplicate: the database search also retrieved this paper as dual-use-capabilities-of-concern-bd7be8, which is the retained record and carries the abstract and both screener verdicts.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E9",
+    "exclusionReason": "Duplicate",
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "Bio foundation model",
+        "LLM",
+        "Agent / lab automation"
+      ],
+      "stages": [],
+      "aiRole": "load-bearing",
+      "evidence": "asserted only",
+      "intent": "unspecified"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "nasem-2025-aidesign",
+    "title": "AI-Enabled Biological Design and the Risks of Synthetic Biology (in: The Age of AI in the Life Sciences)",
+    "authors": "National Academies of Sciences, Engineering, and Medicine",
+    "year": 2025,
+    "venue": "NASEM",
+    "sourceType": "Institutional",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK614591/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Works pathways through the Design-Build-Test-Learn cycle and is explicit that current tools cannot design self-replicating agents de novo. Useful as a constraint source.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 3,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "dhs-2024-cbrn",
+    "title": "Report on Reducing the Risks at the Intersection of Artificial Intelligence and CBRN Threats",
+    "authors": "US Department of Homeland Security, CWMD",
+    "year": 2024,
+    "venue": "DHS",
+    "sourceType": "Government",
+    "url": "https://www.dhs.gov/sites/default/files/2024-06/24_0620_cwmd-dhs-cbrn-ai-eo-report-04262024-public-release.pdf",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Mixed-harm source under E5: covers chemical and biological. Extract the biological pathways only.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 5,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "crs-r47849",
+    "title": "Artificial Intelligence in the Biological Sciences: Uses, Safety, Security, and Oversight",
+    "authors": "Congressional Research Service",
+    "year": 2024,
+    "venue": "CRS R47849",
+    "sourceType": "Government",
+    "url": "https://www.congress.gov/crs-product/R47849",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Contains the ricin active-site redesign example and synthesis-screening circumvention, with an explicit caveat that design does not imply producibility.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 2,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "cset-2024-nistrfi",
+    "title": "CSET Response to NIST RFI on Chemical and Biological AI Models",
+    "authors": "Batalis, Venkatram",
+    "year": 2024,
+    "venue": "CSET Georgetown",
+    "sourceType": "Institutional",
+    "url": "https://cset.georgetown.edu/publication/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Frames misuse as lowering the barrier versus raising the ceiling and describes red-teaming and uplift studies as the evidence instruments. Useful for WS3 indicator selection.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Bio foundation model"
+      ],
+      "stages": [],
+      "aiRole": "present",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 2,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "rand-2025-chembio",
+    "title": "On the Responsible Development and Use of Chem-Bio AI Models: Comments on Evaluations, Mitigations, and Emerging Trends",
+    "authors": "RAND",
+    "year": 2025,
+    "venue": "RAND PE-A3674-1",
+    "sourceType": "Institutional",
+    "url": "https://www.rand.org/pubs/perspectives/PEA3674-1.html",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Catalogues existing evaluation instruments including HarmBench and the RAND red-team design. Candidate key-risk-indicator source for Workstream 3.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier"
+      ],
+      "aiClass": [
+        "LLM",
+        "Bio foundation model"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "red-team or uplift evidence",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 3,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "csr-2025-aixbio",
+    "title": "Assessing Dual-Use Issues at the AIxBio Convergence",
+    "authors": "Council on Strategic Risks",
+    "year": 2025,
+    "venue": "CSR",
+    "sourceType": "Institutional",
+    "url": "https://councilonstrategicrisks.org/2025/07/31/the-aixbio-landscape/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Landscape synthesis. Nearly all pathways are inherited from RAND and Sandbrink; a good test case for whether lineage tagging is working.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "LLM",
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "present",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "inherited",
+    "reviewerScenarioEstimate": 4,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "soice-2023-democratize",
+    "title": "Can large language models democratize access to dual-use biotechnology?",
+    "authors": "Soice, Rocha, Cordova, Specter, Esvelt",
+    "year": 2023,
+    "venue": "arXiv:2306.03809",
+    "sourceType": "Preprint",
+    "url": "https://arxiv.org/abs/2306.03809",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Non-scientist participants elicited candidate agents, protocols, and synthesis-provider routes in a short exercise. One of the few empirical anchors in the corpus. Duplicate: the database search also retrieved this paper as can-large-language-models-democratize-13619b, which is the retained record and carries the abstract and both screener verdicts.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E9",
+    "exclusionReason": "Duplicate",
+    "grade": {
+      "mechanisms": [
+        "lowers barrier",
+        "increases access"
+      ],
+      "aiClass": [
+        "LLM"
+      ],
+      "stages": [],
+      "aiRole": "load-bearing",
+      "evidence": "empirical result",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "openai-2024-earlywarning",
+    "title": "Building an early warning system for LLM-aided biological threat creation",
+    "authors": "Patwardhan et al.",
+    "year": 2024,
+    "venue": "OpenAI",
+    "sourceType": "AI-lab evaluation",
+    "url": "https://openai.com/index/building-an-early-warning-system-for-llm-aided-biological-threat-creation/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Uplift study across five stages of a biothreat creation process with expert and student cohorts. Mild uplift, not statistically significant.",
+    "triad": {
+      "ai": true,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "include",
+    "exclusionCode": null,
+    "exclusionReason": null,
+    "grade": {
+      "mechanisms": [
+        "lowers barrier"
+      ],
+      "aiClass": [
+        "LLM"
+      ],
+      "stages": [],
+      "aiRole": "assisting",
+      "evidence": "red-team or uplift evidence",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 1,
+    "extractionStatus": "pending-full-text"
+  },
+  {
+    "id": "urbina-2022-dualuse",
+    "title": "Dual use of artificial-intelligence-powered drug discovery",
+    "authors": "Urbina, Lentzos, Invernizzi, Ekins",
+    "year": 2022,
+    "venue": "Nature Machine Intelligence 4:189-191",
+    "sourceType": "Peer-reviewed",
+    "url": "https://doi.org/10.1038/s42256-022-00465-9",
+    "doi": "10.1038/s42256-022-00465-9",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "The canonical generative-toxicity demonstration, but the harm is chemical. Excluded under E5 unless a biological pathway is also stated. Cited by many included sources as an analogue.",
+    "triad": {
+      "ai": true,
+      "harm": false,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E5",
+    "exclusionReason": "Out of scope harm",
+    "grade": {
+      "mechanisms": [
+        "raises ceiling of harm"
+      ],
+      "aiClass": [
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "n/a",
+      "evidence": "empirical result",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "saferai-2025-methodology",
+    "title": "A Methodology for Quantitative AI Risk Modeling",
+    "authors": "Murray, Barrett, Papadatos, Quarks, Smith, Tlaie Boria, Touzet, Campos",
+    "year": 2025,
+    "venue": "SaferAI",
+    "sourceType": "Institutional",
+    "url": "https://www.safer-ai.org/",
+    "doi": "",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Method, not pathway: names biological weapons as an applicable domain but articulates its event chains in cyber. Excluded from the scenario corpus, retained as the Workstream 3 method reference.",
+    "triad": {
+      "ai": true,
+      "harm": false,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E1",
+    "exclusionReason": "Capability paper",
+    "grade": {
+      "mechanisms": [
+        "none claimed"
+      ],
+      "aiClass": [
+        "LLM"
+      ],
+      "stages": [],
+      "aiRole": "n/a",
+      "evidence": "asserted only",
+      "intent": "unspecified"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "watson-2023-rfdiffusion",
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "authors": "Watson et al.",
+    "year": 2023,
+    "venue": "Nature 620:1089-1100",
+    "sourceType": "Peer-reviewed",
+    "url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "doi": "10.1038/s41586-023-06415-8",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Foundational design-tool paper with no misuse pathway of its own. Enters Workstream 3 as capability evidence, never the scenario library.",
+    "triad": {
+      "ai": true,
+      "harm": false,
+      "connective": false
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E1",
+    "exclusionReason": "Capability paper",
+    "grade": {
+      "mechanisms": [
+        "none claimed"
+      ],
+      "aiClass": [
+        "Biological design tool"
+      ],
+      "stages": [],
+      "aiRole": "n/a",
+      "evidence": "empirical result",
+      "intent": "unspecified"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  },
+  {
+    "id": "nasem-2018-biodefense",
+    "title": "Biodefense in the Age of Synthetic Biology",
+    "authors": "National Academies of Sciences, Engineering, and Medicine",
+    "year": 2018,
+    "venue": "NASEM",
+    "sourceType": "Institutional",
+    "url": "https://doi.org/10.17226/24890",
+    "doi": "10.17226/24890",
+    "database": "Named sources",
+    "query": "NS",
+    "queryLabel": "Named sources",
+    "abstract": null,
+    "abstractStatus": "full text held by reviewer; machine-readable abstract not retrieved",
+    "reviewerNote": "Supplies the assessment framework that several included sources build on, but names no AI element. Excluded under E2; useful as a baseline-risk reference.",
+    "triad": {
+      "ai": false,
+      "harm": true,
+      "connective": true
+    },
+    "verdict": "exclude",
+    "exclusionCode": "E2",
+    "exclusionReason": "Conventional biosecurity",
+    "grade": {
+      "mechanisms": [
+        "none claimed"
+      ],
+      "aiClass": [],
+      "stages": [],
+      "aiRole": "n/a",
+      "evidence": "asserted only",
+      "intent": "deliberate"
+    },
+    "lineage": "original",
+    "reviewerScenarioEstimate": 0,
+    "extractionStatus": "not-eligible"
+  }
+]

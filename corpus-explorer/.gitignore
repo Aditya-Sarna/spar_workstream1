@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+.env*.local
+.vercel
+*.tsbuildinfo
+data/review.db
+data/review.db-wal
+data/review.db-shm
+data/harvest-checkpoint.json
